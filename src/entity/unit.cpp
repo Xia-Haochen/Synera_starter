@@ -104,37 +104,31 @@ void Unit::find_target(Game& game)
 
 void Unit::action(Game& game)
 {
-    // TODO[T2-2]: 实现基于状态机的帧更新逻辑，切换状态并执行对应行为
-    // 例如：Idle状态寻找目标 -> Moving状态向目标移动避障 -> Attacking状态攻击目标 -> Casting状态施放技能 -> Dead状态不执行任何行为
     if(!is_alive) {
         return;
     }
     if(is_Dizzy) {
-        // 眩晕状态无法行动，持续时间和逻辑后续实现
         is_Dizzy = false;
         return;
+    }
+    if(!has_target || !target || !target->get_isAlive()) {
+        find_target(game);
     }
     if(has_target && target && target->get_isAlive()) {
         int dist = distance(m_position, target->position());
         if (dist <= Range) {
             if(Mana >= Max_Mana) {
-                castSkill(game); // 法力满时优先施放技能
-                Mana = 0;        
+                castSkill(game);
+                Mana = 0;
             } else {
-                attack(target); // 否则执行普通攻击
+                attack(target);
             }
         } else {
-            // 不在攻击范围内，需要向目标移动 (调用 Board::findPath)
-            // 由于 Unit.cpp 里依赖具体的 Board，通常是在 game.cpp 里做移动调度，
-            // 也可以在这里通过 game 拿到 board 寻路：
             QPoint nextStep = game.get_board().findPath(m_position, target->position());
             if (nextStep != m_position) {
                 game.get_board().moveUnit(m_position, nextStep);
             }
         }
-    } else {
-        // 否则保持Idle状态，寻找目标
-        find_target(game);
     }
 }
 
