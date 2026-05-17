@@ -1,0 +1,5 @@
+C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/Synera_Starter.dir
+C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/edit_cache.dir
+C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/rebuild_cache.dir
+C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/Synera_Starter_autogen_timestamp_deps.dir
+C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/Synera_Starter_autogen.dir
