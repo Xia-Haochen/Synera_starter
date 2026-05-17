@@ -127,6 +127,8 @@ private:
     PlayerState m_playerState;
     QHash<Unit*, QPoint> m_preCombatPositions;
     class QTimer* m_combatTimer;
+    int m_combatUnitIndex = -1;   // 当前轮到哪个单位行动
+    int m_actingUnitId = -1;      // 正在行动的单位 ID（用于高亮）
 };
 
 #endif // CORE_GAME_H

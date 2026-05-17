@@ -27,6 +27,8 @@ public:
     void setGridPos(const QPoint& gridPos);
     QPoint gridPos() const { return m_gridPos; }
 
+    void setHighlighted(bool highlighted) { m_highlighted = highlighted; update(); }
+
 signals:
     // 拖拽生命周期事件，交由 Game 统一处理规则。
     void dragStarted(int unitId, const QPoint& sourceGrid, const QPointF& scenePos);
@@ -48,6 +50,7 @@ private:
     bool m_dragging;
     mutable QPixmap m_sprite;
     mutable bool m_spriteTried;
+    bool m_highlighted = false;
 };
 
 #endif // GUI_ITEMS_UNITITEM_H

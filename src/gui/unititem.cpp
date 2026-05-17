@@ -127,6 +127,13 @@ void UnitItem::paint(QPainter* painter, const QStyleOptionGraphicsItem*, QWidget
             starStr += QStringLiteral("★");
         }
         painter->drawText(QRectF(-30, 26, 60, 14), Qt::AlignCenter, starStr);
+
+        // 行动高亮：正在行动的单位显示金色边框
+        if (m_highlighted) {
+            painter->setPen(QPen(QColor(255, 215, 0), 3));
+            painter->setBrush(Qt::NoBrush);
+            painter->drawRoundedRect(QRectF(-41, -41, 82, 82), 6, 6);
+        }
     }
 }
 

@@ -30,7 +30,7 @@ Game::Game(QObject* parent)
     , m_rowSpacing(69.0)
     , m_combatTimer(new QTimer(this))
 {
-    m_combatTimer->setInterval(1000); // 1000ms per tick
+    m_combatTimer->setInterval(1000); // 300ms per unit action
     connect(m_combatTimer, &QTimer::timeout, this, &Game::combatTick);
 }
 
@@ -58,6 +58,8 @@ void Game::reset()
 
     // 完全重置状态为重新开始游戏的状态
     m_phase = Phase::Prep;
+    m_combatUnitIndex = -1;
+    m_actingUnitId = -1;
     m_playerState.round = 1;
     m_playerState.hp = 10; // 重置为初始满血
     m_playerState.gold = 0; // 重置金币为 0
@@ -98,24 +100,51 @@ void Game::reset()
 
 void Game::combatTick()
 {
-    bool enemyAlive = false;
-    bool playerAlive = false;
-    
-    for (Unit* u : m_units) {
+    // 清除上一个行动单位的高亮
+    if (m_actingUnitId != -1) {
+        UnitItem* prev = findUnitItem(m_actingUnitId);
+        if (prev) prev->setHighlighted(false);
+        m_actingUnitId = -1;
+    }
+
+    // 每 tick 只让一个单位行动，轮流循环
+    int totalUnits = m_units.size();
+    for (int i = 0; i < totalUnits; ++i) {
+        m_combatUnitIndex = (m_combatUnitIndex + 1) % totalUnits;
+        Unit* u = m_units[m_combatUnitIndex];
         if (u->get_isAlive() && m_board.hasUnitAt(u->position())) {
             u->action(*this);
+
+            // 高亮当前行动单位
+            UnitItem* item = findUnitItem(u->id());
+            if (item) item->setHighlighted(true);
+            m_actingUnitId = u->id();
+            break;
+        }
+    }
+
+    cleanupDeadUnits();
+    syncFromBoard();
+
+    // 判断是否有一方全部阵亡
+    bool enemyAlive = false;
+    bool playerAlive = false;
+    for (Unit* u : m_units) {
+        if (u->get_isAlive() && m_board.hasUnitAt(u->position())) {
             if (u->get_owner() == Owner::PlayerCtrl) playerAlive = true;
             if (u->get_owner() == Owner::EnemyCtrl) enemyAlive = true;
         }
     }
-    
-    cleanupDeadUnits();
-    syncFromBoard();
 
-    // 如果一方全部阵亡，结束战斗并进入下一阶段 (Resolve)
     if (!enemyAlive || !playerAlive) {
         m_combatTimer->stop();
-        advancePhase(); 
+        // 清除高亮
+        if (m_actingUnitId != -1) {
+            UnitItem* prev = findUnitItem(m_actingUnitId);
+            if (prev) prev->setHighlighted(false);
+            m_actingUnitId = -1;
+        }
+        advancePhase();
     }
 }
 
@@ -123,6 +152,9 @@ void Game::advancePhase()
 {
     if (m_phase == Phase::Prep) {
         m_phase = Phase::Combat;
+        // 重置战斗轮转索引
+        m_combatUnitIndex = -1;
+        m_actingUnitId = -1;
         // 记录战斗前的位置
         m_preCombatPositions.clear();
         for (Unit* u : m_units) {
