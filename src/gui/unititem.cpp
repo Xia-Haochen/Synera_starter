@@ -62,14 +62,14 @@ void UnitItem::paint(QPainter* painter, const QStyleOptionGraphicsItem*, QWidget
             case JobType::Archer:  jobChar = QStringLiteral("弓"); break;
             default:               jobChar = QStringLiteral("?"); break;
             }
-            painter->drawText(QRectF(-13, -13, 26, 26), Qt::AlignCenter, jobChar);
+            painter->drawText(QRectF(-13, -9, 26, 26), Qt::AlignCenter, jobChar);
         }
     }
 
     // 绘制血条、蓝条和属性面板
     if (m_unit) {
-        // 血条背景
-        QRectF hpBgRect(-20, -25, 40, 4);
+        // 血条背景（稍微加高）
+        QRectF hpBgRect(-20, -25, 40, 6);
         painter->setPen(Qt::NoPen);
         painter->setBrush(Qt::black);
         painter->drawRect(hpBgRect);
@@ -77,43 +77,43 @@ void UnitItem::paint(QPainter* painter, const QStyleOptionGraphicsItem*, QWidget
         // 血条前端
         if (m_unit->get_maxHp() > 0) {
             qreal hpRatio = qBound(0.0, static_cast<qreal>(m_unit->get_hp()) / m_unit->get_maxHp(), 1.0);
-            QRectF hpRect(-20, -25, 40 * hpRatio, 4);
+            QRectF hpRect(-20, -25, 40 * hpRatio, 6);
             painter->setBrush(Qt::green);
             painter->drawRect(hpRect);
         }
 
         // 蓝条背景
-        QRectF manaBgRect(-20, -20, 40, 4);
+        QRectF manaBgRect(-20, -18, 40, 6);
         painter->setBrush(Qt::black);
         painter->drawRect(manaBgRect);
 
         // 蓝条前端
         if (m_unit->get_maxMana() > 0) {
             qreal manaRatio = qBound(0.0, static_cast<qreal>(m_unit->get_mana()) / m_unit->get_maxMana(), 1.0);
-            QRectF manaRect(-20, -20, 40 * manaRatio, 4);
+            QRectF manaRect(-20, -18, 40 * manaRatio, 6);
             painter->setBrush(Qt::blue);
             painter->drawRect(manaRect);
         }
 
         // 血条与蓝条的数值标注
         QFont valueFont = painter->font();
-        valueFont.setPointSize(6);
+        valueFont.setPointSize(7);
         valueFont.setBold(false);
         painter->setFont(valueFont);
         painter->setPen(QColor(200, 200, 200));
         QString hpVal = QString("%1/%2").arg(m_unit->get_hp()).arg(m_unit->get_maxHp());
-        painter->drawText(QRectF(22, -25, 36, 4), Qt::AlignVCenter | Qt::AlignLeft, hpVal);
+        painter->drawText(QRectF(22, -25, 60, 6), Qt::AlignVCenter | Qt::AlignLeft, hpVal);
         QString manaVal = QString("%1/%2").arg(m_unit->get_mana()).arg(m_unit->get_maxMana());
-        painter->drawText(QRectF(22, -20, 36, 4), Qt::AlignVCenter | Qt::AlignLeft, manaVal);
+        painter->drawText(QRectF(22, -18, 60, 6), Qt::AlignVCenter | Qt::AlignLeft, manaVal);
 
         // 属性面板：攻击力显示在上方
         painter->setPen(Qt::white);
         QFont statsFont = painter->font();
-        statsFont.setPointSize(7);
+        statsFont.setPointSize(9);
         statsFont.setBold(false);
         painter->setFont(statsFont);
         QString atkStr = QString("A:%1").arg(m_unit->get_atk());
-        painter->drawText(QRectF(-30, -40, 60, 15), Qt::AlignCenter, atkStr);
+        painter->drawText(QRectF(-30, -36, 60, 15), Qt::AlignCenter, atkStr);
 
         // 星级显示在单位底部
         QFont starFont = painter->font();
@@ -126,7 +126,7 @@ void UnitItem::paint(QPainter* painter, const QStyleOptionGraphicsItem*, QWidget
         for (int i = 0; i < starLevel; ++i) {
             starStr += QStringLiteral("★");
         }
-        painter->drawText(QRectF(-30, 22, 60, 14), Qt::AlignCenter, starStr);
+        painter->drawText(QRectF(-30, 26, 60, 14), Qt::AlignCenter, starStr);
     }
 }
 
