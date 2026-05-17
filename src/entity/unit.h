@@ -49,7 +49,7 @@ public:
     {
         if constexpr (T == JobType::Warrior)
         {
-            attr = {1800, 200, 1, 40};
+            attr = {1800, 200, 1, 30};
         }
         else if constexpr (T == JobType::Mage)
         {
@@ -57,7 +57,7 @@ public:
         }
         else if constexpr (T == JobType::Archer)
         {
-            attr = {1200, 250, 2, 50};
+            attr = {1200, 250, 2, 40};
         }
     }
 };

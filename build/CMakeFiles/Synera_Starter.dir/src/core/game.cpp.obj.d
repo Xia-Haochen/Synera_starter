@@ -345,6 +345,7 @@ CMakeFiles/Synera_Starter.dir/src/core/game.cpp.obj: \
  C:/Users/xiaha/Desktop/Synera_starter/src/entity/unit.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
  C:\Users\xiaha\Desktop\Synera_starter\src\core\Bench.h \
+ C:\Users\xiaha\Desktop\Synera_starter\src\core\shop.h \
  C:/Users/xiaha/Desktop/Synera_starter/src/gui/griditem.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QGraphicsObject \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qgraphicsitem.h \

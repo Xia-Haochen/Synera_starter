@@ -28,6 +28,9 @@ public:
     void setHoverActive(bool active);
     void setDropActive(bool active);
 
+    // 标记为出售区域（显示 "SELL" 文本）
+    void setSellZone(bool isSellZone);
+
 protected:
     void hoverEnterEvent(QGraphicsSceneHoverEvent* event) override;
     void hoverLeaveEvent(QGraphicsSceneHoverEvent* event) override;
@@ -42,6 +45,7 @@ private:
     bool m_hoverActive;
     bool m_dropActive;
     bool m_pointerHover;
+    bool m_isSellZone;
 };
 
 #endif // GUI_ITEMS_GRIDITEM_H

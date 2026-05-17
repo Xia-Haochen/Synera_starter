@@ -23,6 +23,11 @@ private slots:
     void onResetButtonClicked();
     void onStartBattleClicked();
     void updateUIState();
+    void updateShopUI();
+    void onBuySlot0();
+    void onBuySlot1();
+    void onBuySlot2();
+    void onRefreshShop();
 
 private:
     void setupUI();
@@ -35,6 +40,11 @@ private:
     class QLabel* m_statsLabel;
     class QLabel* m_phaseLabel; // 显示当前阶段的标签
     Game* m_game;
+
+    // 商店 UI
+    QWidget* m_shopPanel;
+    QPushButton* m_shopSlots[3];
+    QPushButton* m_refreshButton;
 };
 
 #endif // GAMEWINDOW_H

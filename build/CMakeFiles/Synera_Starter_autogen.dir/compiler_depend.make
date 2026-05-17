@@ -618,6 +618,8 @@ Synera_Starter_autogen/timestamp: C:/Qt/6.11.0/mingw_64/include/QtCore/QHash \
   C:/Users/xiaha/Desktop/Synera_starter/src/core/board.h \
   C:/Users/xiaha/Desktop/Synera_starter/src/core/game.cpp \
   C:/Users/xiaha/Desktop/Synera_starter/src/core/game.h \
+  C:/Users/xiaha/Desktop/Synera_starter/src/core/shop.cpp \
+  C:/Users/xiaha/Desktop/Synera_starter/src/core/shop.h \
   C:/Users/xiaha/Desktop/Synera_starter/src/entity/unit.cpp \
   C:/Users/xiaha/Desktop/Synera_starter/src/entity/unit.h \
   C:/Users/xiaha/Desktop/Synera_starter/src/gui/gamewindow.cpp \
@@ -636,6 +638,10 @@ C:/Users/xiaha/Desktop/Synera_starter/src/gui/gamewindow.h:
 C:/Users/xiaha/Desktop/Synera_starter/src/gui/gamewindow.cpp:
 
 C:/Users/xiaha/Desktop/Synera_starter/src/entity/unit.cpp:
+
+C:/Users/xiaha/Desktop/Synera_starter/src/core/shop.h:
+
+C:/Users/xiaha/Desktop/Synera_starter/src/core/shop.cpp:
 
 C:/Users/xiaha/Desktop/Synera_starter/src/core/game.cpp:
 

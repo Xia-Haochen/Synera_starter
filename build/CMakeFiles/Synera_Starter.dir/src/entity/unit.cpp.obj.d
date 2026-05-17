@@ -345,4 +345,5 @@ CMakeFiles/Synera_Starter.dir/src/entity/unit.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QVector \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qvector.h \
  C:/Users/xiaha/Desktop/Synera_starter/src/entity/unit.h \
- C:/Users/xiaha/Desktop/Synera_starter/src/core/Bench.h
+ C:/Users/xiaha/Desktop/Synera_starter/src/core/Bench.h \
+ C:/Users/xiaha/Desktop/Synera_starter/src/core/shop.h

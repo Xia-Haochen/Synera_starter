@@ -346,9 +346,12 @@ CMakeFiles/Synera_Starter.dir/Synera_Starter_autogen/mocs_compilation.cpp.obj: \
  C:/Users/xiaha/Desktop/Synera_starter/src/entity/unit.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
  C:/Users/xiaha/Desktop/Synera_starter/src/core/Bench.h \
+ C:/Users/xiaha/Desktop/Synera_starter/src/core/shop.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h \
+ C:\Users\xiaha\Desktop\Synera_starter\build\Synera_Starter_autogen\PRMOGMWJPH/moc_shop.cpp \
+ C:/Users/xiaha/Desktop/Synera_starter/src/core/shop.h \
  C:\Users\xiaha\Desktop\Synera_starter\build\Synera_Starter_autogen\MXUWEOXILK/moc_gamewindow.cpp \
  C:/Users/xiaha/Desktop/Synera_starter/src/gui/gamewindow.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \

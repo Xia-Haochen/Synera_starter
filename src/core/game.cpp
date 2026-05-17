@@ -30,7 +30,7 @@ Game::Game(QObject* parent)
     , m_rowSpacing(69.0)
     , m_combatTimer(new QTimer(this))
 {
-    m_combatTimer->setInterval(1000); // 300ms per unit action
+    m_combatTimer->setInterval(500); // 500ms per unit action
     connect(m_combatTimer, &QTimer::timeout, this, &Game::combatTick);
 }
 
@@ -91,6 +91,9 @@ void Game::reset()
 
     // 重新生成第一波敌人以匹配 round = 1 的状况
     spawnEnemyWave();
+
+    // 初始化商店
+    m_shop.rollShop();
 
     // 强制界面的所有状态UI和棋盘实体位置更新一致
     syncFromBoard();
@@ -175,6 +178,7 @@ void Game::advancePhase()
         m_playerState.round++;
         resetUnitsToPrep();
         spawnEnemyWave(); // 刷新下一轮的敌人
+        m_shop.rollShop(); // 每回合自动刷新商店
         syncFromBoard(); // 将新生成的敌方单位图元同步到正确棋盘位置
         emit phaseChanged(m_phase);
         emit stateUpdated();
@@ -274,6 +278,16 @@ void Game::handleDragMoved(int unitId, const QPoint&, const QPointF& scenePos)
     // 每次移动先清除旧高亮，再对候选目标格进行反馈。
     clearGridHighlights();
 
+    // 检查是否移动到出售区域
+    if (m_sellZoneItem) {
+        QPointF diff = scenePos - m_sellZoneCenter;
+        qreal dist = qSqrt(diff.x() * diff.x() + diff.y() * diff.y());
+        if (dist < m_radius * 1.5) {
+            m_sellZoneItem->setDropActive(true);
+            return;
+        }
+    }
+
     const QPoint target = worldToGrid(scenePos);
     GridItem* targetItem = findGridItem(target);
     if (!targetItem) {
@@ -293,10 +307,29 @@ void Game::handleDropCommand(int unitId, const QPoint& sourceGrid, const QPointF
         return;
     }
 
+    clearGridHighlights();
+
+    // 检查是否出售到出售区域
+    if (m_sellZoneItem) {
+        QPointF diff = scenePos - m_sellZoneCenter;
+        qreal dist = qSqrt(diff.x() * diff.x() + diff.y() * diff.y());
+        if (dist < m_radius * 1.5) {
+            sellUnit(unitId, sourceGrid);
+            UnitItem* item = findUnitItem(m_activeUnitId);
+            if (item) {
+                item->setZValue(kZUnit);
+            }
+            m_dragActive = false;
+            m_activeUnitId = -1;
+            m_sourceGrid = QPoint(-1, -1);
+            syncFromBoard();
+            return;
+        }
+    }
+
     // 落点合法则更新棋盘，否则保持原位并仅重置拖拽状态。
     const QPoint target = worldToGrid(scenePos);
 
-    clearGridHighlights();
     if (canApplyDrop(unitId, sourceGrid, target)) {
         applyDrop(unitId, target);
     }
@@ -494,6 +527,113 @@ void Game::applyDrop(int unitId, const QPoint& target)
     }
 }
 
+void Game::buyFromShopSlot(int slotIndex)
+{
+    if (m_phase != Phase::Prep) return;
+    if (slotIndex < 0 || slotIndex >= Shop::SHOP_SIZE) return;
+    if (m_shop.isSlotEmpty(slotIndex)) return;
+    if (m_playerState.gold < Shop::UNIT_COST) return;
+    if (m_bench.getUnitCount() >= m_bench.getMaxBenchSize()) return;
+
+    // 扣除金币
+    m_playerState.gold -= Shop::UNIT_COST;
+
+    // 根据商店槽位的职业创建单位
+    JobType job = m_shop.getSlot(slotIndex);
+    Unit* newUnit = nullptr;
+    switch (job) {
+        case JobType::Warrior:
+            newUnit = new Warrior("战士", Owner::PlayerCtrl);
+            break;
+        case JobType::Mage:
+            newUnit = new Mage("法师", Owner::PlayerCtrl);
+            break;
+        case JobType::Archer:
+            newUnit = new Archer("弓手", Owner::PlayerCtrl);
+            break;
+    }
+
+    if (!newUnit) return;
+
+    m_units.append(newUnit);
+
+    // 创建图元
+    UnitItem* unitItem = new UnitItem(newUnit);
+    unitItem->setZValue(kZUnit);
+    m_scene->addItem(unitItem);
+    m_unitItems.push_back(unitItem);
+    m_unitItemById[newUnit->id()] = unitItem;
+
+    connect(unitItem, &UnitItem::dragStarted,
+            this, &Game::handleDragStarted);
+    connect(unitItem, &UnitItem::dragMoved,
+            this, &Game::handleDragMoved);
+    connect(unitItem, &UnitItem::dragDropped,
+            this, &Game::handleDropCommand);
+
+    // 放入备战区
+    m_bench.addUnit(newUnit);
+
+    // 设置单位在备战区的位置（syncFromBoard 依赖 position 判断可见性）
+    for (int i = 0; i < m_bench.getMaxBenchSize(); ++i) {
+        if (m_bench.getUnits().value(i, nullptr) == newUnit) {
+            newUnit->setPosition(QPoint(i, Board::ROWS + 1));
+            break;
+        }
+    }
+
+    // 标记商店槽位为空
+    m_shop.clearSlot(slotIndex);
+
+    syncFromBoard();
+    emit stateUpdated();
+}
+
+void Game::rollShop()
+{
+    if (m_phase != Phase::Prep) return;
+    if (m_playerState.gold < Shop::REFRESH_COST) return;
+    m_playerState.gold -= Shop::REFRESH_COST;
+    m_shop.rollShop();
+    emit stateUpdated();
+}
+
+void Game::sellUnit(int unitId, const QPoint& sourceGrid)
+{
+    Unit* unit = findUnitById(unitId);
+    if (!unit || unit->get_owner() != Owner::PlayerCtrl) return;
+
+    // 从棋盘或备战区移除
+    if (m_board.isValidPosition(sourceGrid)) {
+        if (m_board.getUnitAt(sourceGrid) != unit) return;
+        m_board.removeUnit(unit);
+    } else if (isBenchPos(sourceGrid)) {
+        if (m_bench.getUnits().value(sourceGrid.x(), nullptr) != unit) return;
+        m_bench.removeUnit(unit);
+    } else {
+        return;
+    }
+
+    // 移除图元
+    UnitItem* item = findUnitItem(unitId);
+    if (item) {
+        m_scene->removeItem(item);
+        m_unitItems.erase(std::remove(m_unitItems.begin(), m_unitItems.end(), item), m_unitItems.end());
+        m_unitItemById.erase(unitId);
+        delete item;
+    }
+
+    // 移除单位
+    m_units.removeOne(unit);
+    delete unit;
+
+    // 获得出售金币
+    m_playerState.gold += Shop::SELL_PRICE;
+
+    syncFromBoard();
+    emit stateUpdated();
+}
+
 void Game::buildScene()
 {
     // 重建场景时清空旧图元与映射，避免悬挂引用。
@@ -533,6 +673,24 @@ void Game::buildScene()
 
         const QRectF bounds = gridItem->boundingRect();
         totalBounds = totalBounds.united(bounds);
+    }
+
+    // 创建出售区域（黄色六边形）- 放在备战区右侧
+    {
+        int sellRow = Board::ROWS + 1;
+        int sellCol = Board::COLS;
+        const QPolygonF sellPoly = cellHexPolygon(sellRow, sellCol);
+        GridItem* sellItem = new GridItem(sellRow, sellCol, sellPoly);
+        sellItem->setZValue(kZGrid);
+        sellItem->setBaseColor(QColor(180, 180, 50));
+        sellItem->setSellZone(true);
+        m_scene->addItem(sellItem);
+        m_gridItems.push_back(sellItem);
+        m_sellZoneItem = sellItem;
+        m_sellZoneCenter = gridToWorld(sellRow, sellCol);
+
+        const QRectF sellBounds = sellItem->boundingRect();
+        totalBounds = totalBounds.united(sellBounds);
     }
 
     // 创建单位图元并接入拖拽信号。

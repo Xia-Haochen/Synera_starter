@@ -1,5 +1,6 @@
 #include "gamewindow.h"
 #include "core/game.h"
+#include "core/shop.h"
 #include <QGraphicsView>
 #include <QHBoxLayout>
 #include <QPainter>
@@ -66,6 +67,11 @@ void GameWindow::updateUIState()
         m_resetButton->setEnabled(false);
     }
     m_phaseLabel->setText(phaseStr);
+
+    // 更新商店 UI（金币或阶段变化时刷新按钮状态）
+    updateShopUI();
+    m_refreshButton->setEnabled(m_game->getPhase() == Phase::Prep
+        && m_game->getPlayerState().gold >= Shop::REFRESH_COST);
 }
 
 void GameWindow::setupUI()
@@ -118,7 +124,67 @@ void GameWindow::setupUI()
 
     m_mainLayout->addWidget(m_view, 1);
 
-    // 底部控制栏：当前仅保留 Reset，可按需扩展商店/回合按钮等。
+    // 商店面板
+    m_shopPanel = new QWidget(this);
+    QHBoxLayout* shopLayout = new QHBoxLayout(m_shopPanel);
+    shopLayout->setContentsMargins(8, 4, 8, 4);
+
+    QLabel* shopLabel = new QLabel("商店", this);
+    QFont shopFont = shopLabel->font();
+    shopFont.setPointSize(12);
+    shopFont.setBold(true);
+    shopLabel->setFont(shopFont);
+    shopLayout->addWidget(shopLabel);
+
+    for (int i = 0; i < 3; ++i) {
+        m_shopSlots[i] = new QPushButton(this);
+        m_shopSlots[i]->setFixedSize(100, 40);
+        m_shopSlots[i]->setStyleSheet(R"(
+            QPushButton {
+                background-color: #3a4a3a;
+                color: #f2f2f2;
+                border: 1px solid #567856;
+                border-radius: 4px;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            QPushButton:hover {
+                background-color: #4a5a4a;
+            }
+            QPushButton:disabled {
+                background-color: #2a2a2a;
+                color: #666666;
+                border-color: #444444;
+            }
+        )");
+        shopLayout->addWidget(m_shopSlots[i]);
+    }
+
+    m_refreshButton = new QPushButton("刷新(3g)", this);
+    m_refreshButton->setFixedSize(90, 40);
+    m_refreshButton->setStyleSheet(R"(
+        QPushButton {
+            background-color: #5a4a3a;
+            color: #f2f2f2;
+            border: 1px solid #8a7a5a;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        QPushButton:hover {
+            background-color: #6a5a4a;
+        }
+        QPushButton:disabled {
+            background-color: #2a2a2a;
+            color: #666666;
+            border-color: #444444;
+        }
+    )");
+    shopLayout->addWidget(m_refreshButton);
+
+    m_mainLayout->addWidget(m_shopPanel);
+
+    // 底部控制栏
     QWidget* controlBar = new QWidget(this);
     QHBoxLayout* controlLayout = new QHBoxLayout(controlBar);
     controlLayout->setContentsMargins(0, 0, 0, 0);
@@ -133,6 +199,50 @@ void GameWindow::setupUI()
     connect(m_startBattleButton, &QPushButton::clicked,
             this, &GameWindow::onStartBattleClicked);
 
+    // 商店按钮连接
+    connect(m_shopSlots[0], &QPushButton::clicked, this, &GameWindow::onBuySlot0);
+    connect(m_shopSlots[1], &QPushButton::clicked, this, &GameWindow::onBuySlot1);
+    connect(m_shopSlots[2], &QPushButton::clicked, this, &GameWindow::onBuySlot2);
+    connect(m_refreshButton, &QPushButton::clicked, this, &GameWindow::onRefreshShop);
+
+    // 连接商店更新信号
+    connect(&m_game->getShop(), &Shop::shopChanged, this, &GameWindow::updateShopUI);
+
     // 将逻辑层场景挂载到视图。
     m_view->setScene(m_game->scene());
+
+    // 初始更新商店显示
+    updateShopUI();
+}
+
+void GameWindow::updateShopUI()
+{
+    if (!m_game) return;
+
+    for (int i = 0; i < 3; ++i) {
+        if (m_game->getShop().isSlotEmpty(i)) {
+            m_shopSlots[i]->setText("已售");
+            m_shopSlots[i]->setEnabled(false);
+        } else {
+            JobType job = m_game->getShop().getSlot(i);
+            QString name;
+            switch (job) {
+                case JobType::Warrior: name = "战士"; break;
+                case JobType::Mage:    name = "法师"; break;
+                case JobType::Archer:  name = "弓手"; break;
+            }
+            m_shopSlots[i]->setText(QString("%1\n10g").arg(name));
+            m_shopSlots[i]->setEnabled(m_game->getPhase() == Phase::Prep
+                                       && m_game->getPlayerState().gold >= Shop::UNIT_COST);
+        }
+    }
+}
+
+void GameWindow::onBuySlot0() { if (m_game) m_game->buyFromShopSlot(0); }
+void GameWindow::onBuySlot1() { if (m_game) m_game->buyFromShopSlot(1); }
+void GameWindow::onBuySlot2() { if (m_game) m_game->buyFromShopSlot(2); }
+
+void GameWindow::onRefreshShop()
+{
+    if (m_game) m_game->rollShop();
 }

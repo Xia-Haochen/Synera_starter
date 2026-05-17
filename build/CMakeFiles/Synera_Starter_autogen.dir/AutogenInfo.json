@@ -312,6 +312,12 @@
 			null
 		],
 		[
+			"C:/Users/xiaha/Desktop/Synera_starter/src/core/shop.h",
+			"MU",
+			"PRMOGMWJPH/moc_shop.cpp",
+			null
+		],
+		[
 			"C:/Users/xiaha/Desktop/Synera_starter/src/entity/unit.h",
 			"MU",
 			"GH2DYT6SNJ/moc_unit.cpp",
@@ -419,6 +425,7 @@
 			null
 		],
 		[ "C:/Users/xiaha/Desktop/Synera_starter/src/core/game.cpp", "MU", null ],
+		[ "C:/Users/xiaha/Desktop/Synera_starter/src/core/shop.cpp", "MU", null ],
 		[
 			"C:/Users/xiaha/Desktop/Synera_starter/src/entity/unit.cpp",
 			"MU",

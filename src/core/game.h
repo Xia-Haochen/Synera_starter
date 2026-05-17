@@ -10,6 +10,7 @@
 #include <vector>
 #include "board.h"
 #include "Bench.h"
+#include "shop.h"
 
 class Unit;
 class QGraphicsScene;
@@ -64,6 +65,11 @@ public:
 
     void spawnEnemyWave();
 
+    // 商店与出售
+    Shop& getShop() { return m_shop; }
+    void buyFromShopSlot(int slotIndex);
+    void rollShop();
+
 signals:
     void phaseChanged(Phase newPhase);
     void stateUpdated();
@@ -83,6 +89,8 @@ private:
     // 落子合法性判断与执行。
     bool canApplyDrop(int unitId, const QPoint& source, const QPoint& target) const;
     void applyDrop(int unitId, const QPoint& target);
+    // 出售单位
+    void sellUnit(int unitId, const QPoint& sourceGrid);
     // finish: TODO[T1-2]: 非法拖拽处理策略（交换/回弹）统一收口函数，避免散落在UI事件中。
     // finish: TODO[T1-1]: 棋盘与备战区双向上阵/下阵规则（建议拆分 canMoveBenchToBoard/canMoveBoardToBench）。
 
@@ -105,6 +113,7 @@ private:
 
     Board m_board;
     Bench m_bench;
+    Shop m_shop;
     QList<Unit*> m_units;
 
     QGraphicsScene* m_scene;
@@ -129,6 +138,10 @@ private:
     class QTimer* m_combatTimer;
     int m_combatUnitIndex = -1;   // 当前轮到哪个单位行动
     int m_actingUnitId = -1;      // 正在行动的单位 ID（用于高亮）
+
+    // 出售区域
+    GridItem* m_sellZoneItem = nullptr;
+    QPointF m_sellZoneCenter;
 };
 
 #endif // CORE_GAME_H

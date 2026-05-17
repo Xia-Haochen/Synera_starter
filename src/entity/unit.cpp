@@ -190,14 +190,39 @@ void Mage::castSkill(Game& game)
 {
     // finish: TODO[T0-2/T2-5]: 实现法师技能逻辑（如释放火球术）
     if (!get_Target()) return; // 防御性判断
-    
-    int pos[5][2] = {{0, 0}, {1, 0}, {0, 1}, {-1, 0}, {0, -1}};
-    QPoint centerPos = get_Target()->position(); // 修复：火球术应该以目标的位置为中心
-    for(int i=0;i<5;i++) {
-        QPoint targetPos = centerPos + QPoint(pos[i][0], pos[i][1]);
+
+    QPoint centerPos = get_Target()->position();
+
+    // even-r 六边形偏移：偶数行和奇数行的6个邻居方向不同
+    int offsets[6][2];
+    if (centerPos.y() % 2 == 0) {
+        offsets[0][0] = -1; offsets[0][1] = -1;
+        offsets[1][0] =  0; offsets[1][1] = -1;
+        offsets[2][0] = -1; offsets[2][1] =  0;
+        offsets[3][0] =  1; offsets[3][1] =  0;
+        offsets[4][0] = -1; offsets[4][1] =  1;
+        offsets[5][0] =  0; offsets[5][1] =  1;
+    } else {
+        offsets[0][0] =  0; offsets[0][1] = -1;
+        offsets[1][0] =  1; offsets[1][1] = -1;
+        offsets[2][0] = -1; offsets[2][1] =  0;
+        offsets[3][0] =  1; offsets[3][1] =  0;
+        offsets[4][0] =  0; offsets[4][1] =  1;
+        offsets[5][0] =  1; offsets[5][1] =  1;
+    }
+
+    // 灼烧目标本身
+    Unit* centerUnit = game.get_board().getUnitAt(centerPos);
+    if (centerUnit && centerUnit->get_owner() != owner) {
+        centerUnit->takeDamage(get_atk());
+    }
+
+    // 灼烧周围6个方向的敌人
+    for (int i = 0; i < 6; ++i) {
+        QPoint targetPos = centerPos + QPoint(offsets[i][0], offsets[i][1]);
         Unit* targetUnit = game.get_board().getUnitAt(targetPos);
-        if(targetUnit && targetUnit->get_owner() != owner) {
-            targetUnit->takeDamage(get_atk()*1.5); // 火球术对目标及周围敌人造成1.5倍伤害
+        if (targetUnit && targetUnit->get_owner() != owner) {
+            targetUnit->takeDamage(get_atk());
         }
     }
     return;

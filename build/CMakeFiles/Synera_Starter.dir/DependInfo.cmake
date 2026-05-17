@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/xiaha/Desktop/Synera_starter/src/core/bench.cpp" "CMakeFiles/Synera_Starter.dir/src/core/bench.cpp.obj" "gcc" "CMakeFiles/Synera_Starter.dir/src/core/bench.cpp.obj.d"
   "C:/Users/xiaha/Desktop/Synera_starter/src/core/board.cpp" "CMakeFiles/Synera_Starter.dir/src/core/board.cpp.obj" "gcc" "CMakeFiles/Synera_Starter.dir/src/core/board.cpp.obj.d"
   "C:/Users/xiaha/Desktop/Synera_starter/src/core/game.cpp" "CMakeFiles/Synera_Starter.dir/src/core/game.cpp.obj" "gcc" "CMakeFiles/Synera_Starter.dir/src/core/game.cpp.obj.d"
+  "C:/Users/xiaha/Desktop/Synera_starter/src/core/shop.cpp" "CMakeFiles/Synera_Starter.dir/src/core/shop.cpp.obj" "gcc" "CMakeFiles/Synera_Starter.dir/src/core/shop.cpp.obj.d"
   "C:/Users/xiaha/Desktop/Synera_starter/src/entity/unit.cpp" "CMakeFiles/Synera_Starter.dir/src/entity/unit.cpp.obj" "gcc" "CMakeFiles/Synera_Starter.dir/src/entity/unit.cpp.obj.d"
   "C:/Users/xiaha/Desktop/Synera_starter/src/gui/gamewindow.cpp" "CMakeFiles/Synera_Starter.dir/src/gui/gamewindow.cpp.obj" "gcc" "CMakeFiles/Synera_Starter.dir/src/gui/gamewindow.cpp.obj.d"
   "C:/Users/xiaha/Desktop/Synera_starter/src/gui/griditem.cpp" "CMakeFiles/Synera_Starter.dir/src/gui/griditem.cpp.obj" "gcc" "CMakeFiles/Synera_Starter.dir/src/gui/griditem.cpp.obj.d"

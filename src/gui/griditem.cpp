@@ -12,6 +12,7 @@ GridItem::GridItem(int row, int col, const QPolygonF& polygon, QGraphicsItem* pa
     , m_hoverActive(false)
     , m_dropActive(false)
     , m_pointerHover(false)
+    , m_isSellZone(false)
 {
     // 开启 hover 事件，用于鼠标悬浮反馈。
     setAcceptHoverEvents(true);
@@ -38,6 +39,15 @@ void GridItem::paint(QPainter* painter, const QStyleOptionGraphicsItem*, QWidget
     painter->setPen(QPen(border, 2));
     painter->setBrush(fill);
     painter->drawPolygon(m_polygon);
+
+    if (m_isSellZone) {
+        painter->setPen(QPen(QColor(255, 255, 200), 1));
+        QFont f = painter->font();
+        f.setPointSize(10);
+        f.setBold(true);
+        painter->setFont(f);
+        painter->drawText(m_bounds, Qt::AlignCenter, "SELL\n5g");
+    }
 
     if (m_hoverActive || m_pointerHover) {
         painter->setPen(QPen(QColor(220, 220, 220), 2));
@@ -92,4 +102,10 @@ void GridItem::hoverLeaveEvent(QGraphicsSceneHoverEvent* event)
         m_pointerHover = false;
         update();
     }
+}
+
+void GridItem::setSellZone(bool isSellZone)
+{
+    m_isSellZone = isSellZone;
+    update();
 }
