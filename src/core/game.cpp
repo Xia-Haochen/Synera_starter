@@ -203,12 +203,16 @@ void Game::resolveCombat()
     if (enemyAliveCount == 0) {
         // 胜利
         m_playerState.gold += 15;
+        if (m_playerState.round >= 8) {
+            emit gameEnded(true);
+        }
     } else {
         // 失败（或平局）
         m_playerState.gold += 10;
         m_playerState.hp -= enemyAliveCount;
-        if (m_playerState.hp < 0) {
+        if (m_playerState.hp <= 0) {
             m_playerState.hp = 0;
+            emit gameEnded(false);
         }
     }
 }
@@ -258,6 +262,8 @@ void Game::resetUnitsToPrep()
 
 void Game::handleDragStarted(int unitId, const QPoint& sourceGrid, const QPointF&)
 {
+    if (m_phase != Phase::Prep) return;
+
     // 记录拖拽源信息，并提升当前单位层级避免被遮挡。
     m_dragActive = true;
     m_activeUnitId = unitId;
@@ -271,7 +277,7 @@ void Game::handleDragStarted(int unitId, const QPoint& sourceGrid, const QPointF
 
 void Game::handleDragMoved(int unitId, const QPoint&, const QPointF& scenePos)
 {
-    if (!m_dragActive) {
+    if (!m_dragActive || m_phase != Phase::Prep) {
         return;
     }
 
@@ -303,7 +309,8 @@ void Game::handleDragMoved(int unitId, const QPoint&, const QPointF& scenePos)
 
 void Game::handleDropCommand(int unitId, const QPoint& sourceGrid, const QPointF& scenePos)
 {
-    if (!m_dragActive) {
+    if (!m_dragActive || m_phase != Phase::Prep) {
+        m_dragActive = false; // abort any ongoing drag
         return;
     }
 
@@ -483,6 +490,25 @@ bool Game::canApplyDrop(int unitId, const QPoint& source, const QPoint& target) 
 
     if (!sourcePlayer || !targetPlayer) {
         return false;
+    }
+
+    // 检查人口上限
+    bool sourceIsBench = isBenchPos(source);
+    bool targetIsBoard = m_board.isPlayerHalf(target);
+    if (sourceIsBench && targetIsBoard) {
+        Unit* targetUnit = getUnitAtPos(target);
+        if (!targetUnit) {
+            // 从备战区移动到场上空位，需要检查人口
+            int boardCount = 0;
+            for (Unit* u : m_units) {
+                if (u->get_owner() == Owner::PlayerCtrl && m_board.isPlayerHalf(u->position())) {
+                    boardCount++;
+                }
+            }
+            if (boardCount >= m_playerState.boardCap) {
+                return false;
+            }
+        }
     }
 
     return getUnitAtPos(source) == unit;
@@ -790,4 +816,144 @@ QPolygonF Game::cellHexPolygon(int row, int col) const
     }
 
     return poly;
+}
+#include <QJsonObject>
+#include <QJsonArray>
+#include <QJsonDocument>
+#include <QFile>
+
+bool Game::saveToFile(const QString& path) {
+    QJsonObject root;
+    QJsonObject pState;
+    pState["hp"] = m_playerState.hp;
+    pState["gold"] = m_playerState.gold;
+    pState["level"] = m_playerState.level;
+    pState["boardCap"] = m_playerState.boardCap;
+    pState["round"] = m_playerState.round;
+    root["playerState"] = pState;
+    root["phase"] = static_cast<int>(m_phase);
+
+    QJsonArray unitsArr;
+    for (Unit* u : m_units) {
+        QJsonObject uObj;
+        uObj["id"] = u->get_m_id();
+        uObj["name"] = u->name();
+        uObj["job"] = static_cast<int>(u->get_job());
+        uObj["owner"] = static_cast<int>(u->get_owner());
+        uObj["hp"] = u->get_hp();
+        uObj["maxHp"] = u->get_maxHp();
+        uObj["atk"] = u->get_atk();
+        uObj["range"] = u->get_range();
+        uObj["mana"] = u->get_mana();
+        uObj["maxMana"] = u->get_maxMana();
+        uObj["starLevel"] = u->get_starLevel();
+        uObj["posX"] = u->position().x();
+        uObj["posY"] = u->position().y();
+        unitsArr.append(uObj);
+    }
+    root["units"] = unitsArr;
+
+    QJsonArray shopArr;
+    for (int i=0; i<Shop::SHOP_SIZE; ++i) {
+        QJsonObject slot;
+        slot["empty"] = m_shop.isSlotEmpty(i);
+        if (!m_shop.isSlotEmpty(i)) {
+            slot["job"] = static_cast<int>(m_shop.getSlot(i));
+        }
+        shopArr.append(slot);
+    }
+    root["shop"] = shopArr;
+
+    QJsonDocument doc(root);
+    QFile file(path);
+    if (!file.open(QIODevice::WriteOnly)) return false;
+    file.write(doc.toJson());
+    return true;
+}
+
+bool Game::loadFromFile(const QString& path) {
+    QFile file(path);
+    if (!file.open(QIODevice::ReadOnly)) return false;
+    QJsonDocument doc = QJsonDocument::fromJson(file.readAll());
+    if (doc.isNull()) return false;
+    
+    QJsonObject root = doc.object();
+    
+    m_board.clear();
+    m_bench.clear();
+    qDeleteAll(m_units);
+    m_units.clear();
+    m_preCombatPositions.clear();
+    m_dragActive = false;
+    m_activeUnitId = -1;
+    m_sourceGrid = QPoint(-1, -1);
+    if (m_combatTimer->isActive()) m_combatTimer->stop();
+
+    QJsonObject pState = root["playerState"].toObject();
+    m_playerState.hp = pState.contains("hp") ? pState["hp"].toInt() : 10;
+    m_playerState.gold = pState.contains("gold") ? pState["gold"].toInt() : 0;
+    m_playerState.level = pState.contains("level") ? pState["level"].toInt() : 1;
+    m_playerState.boardCap = PlayerState().boardCap; // 强制设为boardCap，不再从存档读取
+    m_playerState.round = pState.contains("round") ? pState["round"].toInt() : 1;
+    m_phase = static_cast<Phase>(root["phase"].toInt());
+
+    QJsonArray shopArr = root["shop"].toArray();
+    for (int i=0; i<Shop::SHOP_SIZE; ++i) {
+        QJsonObject slot = shopArr[i].toObject();
+        m_shop.clearSlot(i);
+        if (!slot["empty"].toBool()) {
+            m_shop.setSlot(i, static_cast<JobType>(slot["job"].toInt()));
+        }
+    }
+
+    QJsonArray unitsArr = root["units"].toArray();
+    int maxId = -1;
+    for (int i=0; i<unitsArr.size(); ++i) {
+        QJsonObject uObj = unitsArr[i].toObject();
+        JobType job = static_cast<JobType>(uObj["job"].toInt());
+        Owner owner = static_cast<Owner>(uObj["owner"].toInt());
+        Unit* u = nullptr;
+        if (job == JobType::Warrior) u = new Warrior(uObj["name"].toString(), owner);
+        else if (job == JobType::Mage) u = new Mage(uObj["name"].toString(), owner);
+        else u = new Archer(uObj["name"].toString(), owner);
+        
+        int loadedId = uObj["id"].toInt();
+        u->set_m_id(loadedId);
+        if (loadedId > maxId) maxId = loadedId;
+
+        u->set_hp(uObj["hp"].toInt());
+        u->set_maxHp(uObj["maxHp"].toInt());
+        u->set_atk(uObj["atk"].toInt());
+        u->set_range(uObj["range"].toInt());
+        u->set_mana(uObj["mana"].toInt());
+        u->set_maxMana(uObj["maxMana"].toInt());
+        u->set_starLevel(uObj["starLevel"].toInt());
+        u->setPosition(uObj["posX"].toInt(), uObj["posY"].toInt());
+        
+        m_units.append(u);
+        
+        QPoint pos = u->position();
+        if (pos.y() == Board::ROWS + 1) { 
+            m_bench.addUnit(u);
+            // 修复：必须让单位的坐标与备战区真正的物理下标对齐，避免旧坐标残留导致与后续购买的单位坐标重叠
+            for (int k = 0; k < m_bench.getMaxBenchSize(); ++k) {
+                if (m_bench.getUnits()[k] == u) {
+                    u->setPosition(QPoint(k, pos.y()));
+                    break;
+                }
+            }
+        } else {
+            m_board.addUnit(u, pos);
+        }
+    }
+    Unit::setNextId(maxId + 1);
+
+    buildScene();
+    syncFromBoard();
+    m_combatUnitIndex = -1;
+    m_actingUnitId = -1;
+    
+    emit stateUpdated();
+    emit phaseChanged(m_phase);
+    return true;
 }

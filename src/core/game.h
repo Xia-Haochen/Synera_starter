@@ -21,7 +21,7 @@ enum class Phase { Prep, Combat, Resolve };
 
 struct PlayerState {
     int hp = 10;
-    int gold = 0;
+    int gold = 100;
     int level = 1;
     int boardCap = 7;   // 人口上限
     int round = 1;
@@ -73,9 +73,13 @@ public:
 signals:
     void phaseChanged(Phase newPhase);
     void stateUpdated();
+    void gameEnded(bool isVictory);
 
     // TODO[T3-1/T3-2]: 增加商店与经济入口（rollShop()/buyUnit()/refreshShop()/upgradePopulation()）。
-    // TODO[T3-6]: 增加存档/读档接口（saveToFile(path)/loadFromFile(path)）。
+public:
+    bool saveToFile(const QString& path);
+    bool loadFromFile(const QString& path);
+signals:
     // TODO[T3-7]: 增加阶段三整合UI同步接口（syncHud()/syncShop()/syncSynergyPanel()）。
 
 private:

@@ -43,7 +43,9 @@ template <> constexpr inline auto Game::qt_create_metaobjectdata<qt_meta_tag_ZN4
         "",
         "Phase",
         "newPhase",
-        "stateUpdated"
+        "stateUpdated",
+        "gameEnded",
+        "isVictory"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -53,6 +55,10 @@ template <> constexpr inline auto Game::qt_create_metaobjectdata<qt_meta_tag_ZN4
         }}),
         // Signal 'stateUpdated'
         QtMocHelpers::SignalData<void()>(5, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'gameEnded'
+        QtMocHelpers::SignalData<void(bool)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Bool, 7 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -78,6 +84,7 @@ void Game::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
         switch (_id) {
         case 0: _t->phaseChanged((*reinterpret_cast<std::add_pointer_t<Phase>>(_a[1]))); break;
         case 1: _t->stateUpdated(); break;
+        case 2: _t->gameEnded((*reinterpret_cast<std::add_pointer_t<bool>>(_a[1]))); break;
         default: ;
         }
     }
@@ -85,6 +92,8 @@ void Game::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
         if (QtMocHelpers::indexOfMethod<void (Game::*)(Phase )>(_a, &Game::phaseChanged, 0))
             return;
         if (QtMocHelpers::indexOfMethod<void (Game::*)()>(_a, &Game::stateUpdated, 1))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (Game::*)(bool )>(_a, &Game::gameEnded, 2))
             return;
     }
 }
@@ -108,14 +117,14 @@ int Game::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }
@@ -130,5 +139,11 @@ void Game::phaseChanged(Phase _t1)
 void Game::stateUpdated()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+}
+
+// SIGNAL 2
+void Game::gameEnded(bool _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 2, nullptr, _t1);
 }
 QT_WARNING_POP

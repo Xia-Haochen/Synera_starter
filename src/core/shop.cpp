@@ -25,6 +25,15 @@ void Shop::clearSlot(int index)
     }
 }
 
+void Shop::setSlot(int index, JobType job)
+{
+    if (index >= 0 && index < SHOP_SIZE) {
+        m_slots[index].occupied = true;
+        m_slots[index].job = job;
+        emit shopChanged();
+    }
+}
+
 JobType Shop::getSlot(int index) const
 {
     return m_slots[index].job;

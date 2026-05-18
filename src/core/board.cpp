@@ -75,7 +75,7 @@ bool Board::isValidPosition(const QPoint& pos) const
 // PA描述玩家半场在下半区，敌方半场在上半区：基于 y 坐标（原点0在顶部向下递增或者符合图形渲染规律），即y坐标超过网格总行数是一半即为玩家场地
 bool Board::isPlayerHalf(const QPoint& pos) const
 {
-    return pos.y() >= ROWS / 2;
+    return pos.y() >= ROWS / 2 && pos.y() < ROWS;
 }
 
 // 清空当前棋盘内存结构操作：利用标准库 std::fill 粗暴覆盖全体为空，清空位置查找表字典。常用于关卡结束转换

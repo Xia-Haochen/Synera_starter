@@ -97,6 +97,7 @@ public:
     JobType get_job() const { return m_job; }
 
     void set_hp(int hp) { HP = hp; }
+    void set_maxHp(int maxHp) { Max_HP = maxHp; }
     void set_atk(int atk) { ATK = atk; }
     void set_range(int range) { Range = range; }
     void set_mana(int mana) { Mana = mana; }
@@ -109,6 +110,8 @@ public:
     void set_starLevel(int starLevel) { Star_Level = starLevel; }
     void setPosition(int x, int y) { m_position = QPoint(x, y); }
     void set_m_id(int id) { m_id = id; }
+    
+    static void setNextId(int id) { s_nextId = id; }
 
     void find_target(Game& game);
     // TODO[T2-2]: 实现每帧更新的虚拟函数，基于状态机的帧逻辑更新，如 virtual void action() = 0; 或提供默认实现

@@ -15,7 +15,7 @@ class Shop : public QObject
 public:
     explicit Shop(QObject* parent = nullptr);
 
-    static const int SHOP_SIZE = 3;
+    static const int SHOP_SIZE = 5;
     static const int UNIT_COST = 10;
     static const int SELL_PRICE = 5;
     static const int REFRESH_COST = 3;
@@ -25,6 +25,7 @@ public:
 
     JobType getSlot(int index) const;
     bool isSlotEmpty(int index) const;
+    void setSlot(int index, JobType job);
 
 signals:
     void shopChanged();
