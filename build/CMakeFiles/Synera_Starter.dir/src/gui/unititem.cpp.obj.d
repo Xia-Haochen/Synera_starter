@@ -376,6 +376,7 @@ CMakeFiles/Synera_Starter.dir/src/gui/unititem.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtGui/QPixmap \
  C:/Users/xiaha/Desktop/Synera_starter/src/entity/unit.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:/Users/xiaha/Desktop/Synera_starter/src/core/equipment.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QCoreApplication \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qcoreevent.h \

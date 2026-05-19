@@ -2,6 +2,8 @@
 #include "entity/unit.h"
 #include "gui/griditem.h"
 #include "gui/unititem.h"
+#include "gui/equipslotitem.h"
+#include "gui/equipitem.h"
 #include <QGraphicsScene>
 #include <QTimer>
 #include <QtMath>
@@ -10,12 +12,19 @@
 
 namespace {
 // 场景分层：格子 < 单位 < 拖拽中的单位。
-// constexpr：编译时常量，确保在编译阶段就确定数值，避免运行时开销。
-// qreal：Qt定义的浮点类型，通常是 double，提供平台无关的精度保证。
-// Z值用于控制图元的渲染层级，数值越大越靠前显示。
 constexpr qreal kZGrid = 0.0;
 constexpr qreal kZUnit = 1.0;
 constexpr qreal kZDraggingUnit = 2.0;
+
+Equipment* createEquipmentFromType(EquipmentType type) {
+    switch (type) {
+        case EquipmentType::IronSword:   return new IronSword();
+        case EquipmentType::Chainmail:   return new Chainmail();
+        case EquipmentType::HasteGloves: return new HasteGloves();
+        case EquipmentType::Sapphire:    return new Sapphire();
+    }
+    return nullptr;
+}
 }
 
 Game::Game(QObject* parent)
@@ -36,6 +45,8 @@ Game::Game(QObject* parent)
 
 Game::~Game()
 {
+    for (auto* eq : m_equipBar) delete eq;
+    m_equipBar.clear();
     qDeleteAll(m_units);
     m_units.clear();
 }
@@ -60,6 +71,8 @@ void Game::reset()
     m_phase = Phase::Prep;
     m_combatUnitIndex = -1;
     m_actingUnitId = -1;
+    m_hasteSecondAction = false;
+    m_combatTimer->setInterval(500);
     m_playerState.round = 1;
     m_playerState.hp = PlayerState().hp ; // 重置为初始满血
     m_playerState.gold = PlayerState().gold; // 重置金币为初始值
@@ -69,6 +82,10 @@ void Game::reset()
     // 彻底销毁当前所有残留的单位对象内存（不论敌我）
     qDeleteAll(m_units);
     m_units.clear();
+
+    // 清空装备栏
+    for (auto* eq : m_equipBar) delete eq;
+    m_equipBar.clear();
 
     // 重新生成开局的原始3个我方单位
     createStarterUnitsIfNeeded();
@@ -112,17 +129,37 @@ void Game::combatTick()
 
     // 每 tick 只让一个单位行动，轮流循环
     int totalUnits = m_units.size();
-    for (int i = 0; i < totalUnits; ++i) {
-        m_combatUnitIndex = (m_combatUnitIndex + 1) % totalUnits;
+
+    bool isBonusAction = m_hasteSecondAction;
+    if (m_hasteSecondAction) {
+        m_hasteSecondAction = false;
+        m_combatTimer->setInterval(500); // 恢复正常间隔
+    } else {
+        // 寻找下一个存活且在场上的单位
+        for (int i = 0; i < totalUnits; ++i) {
+            m_combatUnitIndex = (m_combatUnitIndex + 1) % totalUnits;
+            Unit* u = m_units[m_combatUnitIndex];
+            if (u && u->get_isAlive() && m_board.hasUnitAt(u->position())) {
+                break;
+            }
+        }
+    }
+
+    if (m_combatUnitIndex >= 0 && m_combatUnitIndex < totalUnits) {
         Unit* u = m_units[m_combatUnitIndex];
-        if (u->get_isAlive() && m_board.hasUnitAt(u->position())) {
+        if (u && u->get_isAlive() && m_board.hasUnitAt(u->position())) {
             u->action(*this);
+
+            // 急速手套：仅在非额外行动时触发双动
+            if (!isBonusAction && u->has_haste_gloves()) {
+                m_hasteSecondAction = true;
+                m_combatTimer->setInterval(250);
+            }
 
             // 高亮当前行动单位
             UnitItem* item = findUnitItem(u->id());
             if (item) item->setHighlighted(true);
             m_actingUnitId = u->id();
-            break;
         }
     }
 
@@ -179,6 +216,7 @@ void Game::advancePhase()
         resetUnitsToPrep();
         spawnEnemyWave(); // 刷新下一轮的敌人
         m_shop.rollShop(); // 每回合自动刷新商店
+        rollEquipmentDrop(); // 两次装备掉落判定
         syncFromBoard(); // 将新生成的敌方单位图元同步到正确棋盘位置
         emit phaseChanged(m_phase);
         emit stateUpdated();
@@ -219,6 +257,9 @@ void Game::resolveCombat()
 
 void Game::resetUnitsToPrep()
 {
+    m_hasteSecondAction = false;
+    m_combatTimer->setInterval(500);
+
     // 将所有我方上阵单位恢复到战斗前的位置，并重置状态
     m_board.clear(); // 清空棋盘重新摆放
 
@@ -662,6 +703,16 @@ void Game::checkAndMerge(Unit* newUnit)
                     m_unitItems.erase(std::remove(m_unitItems.begin(), m_unitItems.end(), item), m_unitItems.end());
                     delete item;
                 }
+                // 退还装备到装备栏
+                std::vector<Equipment*> unitEqs = u->get_equipments();
+                for (auto* eq : unitEqs) {
+                    u->remove_equipment(eq);
+                    if (m_equipBar.size() < 5) {
+                        m_equipBar.push_back(eq);
+                    } else {
+                        delete eq;
+                    }
+                }
                 delete u;
             }
 
@@ -713,6 +764,17 @@ void Game::sellUnit(int unitId, const QPoint& sourceGrid)
         delete item;
     }
 
+    // 退还装备到装备栏
+    std::vector<Equipment*> unitEqs = unit->get_equipments();
+    for (auto* eq : unitEqs) {
+        unit->remove_equipment(eq);
+        if (m_equipBar.size() < 5) {
+            m_equipBar.push_back(eq);
+        } else {
+            delete eq;
+        }
+    }
+
     // 移除单位
     m_units.removeOne(unit);
     delete unit;
@@ -731,6 +793,8 @@ void Game::buildScene()
     m_gridItems.clear();
     m_unitItems.clear();
     m_unitItemById.clear();
+    m_equipSlotItems.clear();
+    m_equipUIItems.clear();
 
     QRectF totalBounds;
     bool first = true;
@@ -783,6 +847,17 @@ void Game::buildScene()
         totalBounds = totalBounds.united(sellBounds);
     }
 
+    // 创建装备栏槽位
+    qreal startX = gridToWorld(Board::ROWS + 1, 0).x();
+    qreal yBase = gridToWorld(Board::ROWS + 1, 0).y() + 80.0;
+    for (int i = 0; i < 5; ++i) {
+        QRectF rect(startX + i * 50, yBase, 40, 40);
+        EquipSlotItem* slot = new EquipSlotItem(i, rect);
+        m_scene->addItem(slot);
+        m_equipSlotItems.push_back(slot);
+        totalBounds = totalBounds.united(slot->boundingRect());
+    }
+
     // 创建单位图元并接入拖拽信号。
     for (Unit* unit : m_units) {
         UnitItem* unitItem = new UnitItem(unit);
@@ -818,7 +893,7 @@ void Game::syncFromBoard()
         const QPoint pos = item->unit()->position();
         bool validOnBoard = m_board.isValidPosition(pos) && m_board.getUnitAt(pos) == item->unit();
         bool validOnBench = isBenchPos(pos) && m_bench.getUnits().value(pos.x(), nullptr) == item->unit();
-        
+
         if (!validOnBoard && !validOnBench) {
             item->setVisible(false);
             continue;
@@ -828,9 +903,54 @@ void Game::syncFromBoard()
         item->setGridPos(pos);
         item->setPos(gridToWorld(pos.y(), pos.x()));
         item->setZValue(kZUnit);
+        item->update();
+    }
+
+    // Sync equipItems — use deleteLater to avoid use-after-free
+    // when syncFromBoard is called from within an EquipItem signal handler.
+    for (auto* eqItem : m_equipUIItems) {
+        m_scene->removeItem(eqItem);
+        eqItem->deleteLater();
+    }
+    m_equipUIItems.clear();
+
+    for (int i = 0; i < m_equipBar.size(); ++i) {
+        Equipment* eq = m_equipBar[i];
+        if (i < m_equipSlotItems.size()) {
+            EquipItem* item = new EquipItem(eq);
+            item->setSlotIndex(i);
+            item->setPos(m_equipSlotItems[i]->pos() + QPointF(m_equipSlotItems[i]->boundingRect().topLeft()) + QPointF(20, 20));
+            m_scene->addItem(item);
+            m_equipUIItems.push_back(item);
+            
+            connect(item, &EquipItem::dragStarted, this, &Game::handleEquipDragStarted);
+            connect(item, &EquipItem::dragMoved, this, &Game::handleEquipDragMoved);
+            connect(item, &EquipItem::dragDropped, this, &Game::handleEquipDropCommand);
+        }
+    }
+
+    for (Unit* u : m_units) {
+        if (!u->get_isAlive()) continue;
+        bool validOnBoard = m_board.isValidPosition(u->position()) && m_board.getUnitAt(u->position()) == u;
+        bool validOnBench = isBenchPos(u->position()) && m_bench.getUnits().value(u->position().x(), nullptr) == u;
+        if (!validOnBoard && !validOnBench) continue;
         
-        // finish: TODO[T1-3]: 同步单位血条/蓝条/属性面板到图元。
-        item->update(); // 通知图元重绘以更新血条蓝条
+        auto eqs = u->get_equipments();
+        for (int i = 0; i < eqs.size(); ++i) {
+            EquipItem* item = new EquipItem(eqs[i]);
+            item->setSlotIndex(-(u->id() * 10 + i + 1));
+            UnitItem* uiItem = findUnitItem(u->id());
+            if (uiItem) {
+                item->setPos(uiItem->pos() + QPointF(-40, -10 + i * 20));
+                m_scene->addItem(item);
+                m_equipUIItems.push_back(item);
+                
+                connect(item, &EquipItem::dragStarted, this, &Game::handleEquipDragStarted);
+                connect(item, &EquipItem::dragMoved, this, &Game::handleEquipDragMoved);
+                connect(item, &EquipItem::dragDropped, this, &Game::handleEquipDropCommand);
+            }
+        }
+
     }
 }
 
@@ -919,6 +1039,13 @@ bool Game::saveToFile(const QString& path) {
         uObj["baseAtk"] = u->get_baseAtk();
         uObj["posX"] = u->position().x();
         uObj["posY"] = u->position().y();
+
+        QJsonArray eqArr;
+        for (auto* eq : u->get_equipments()) {
+            eqArr.append(static_cast<int>(eq->getType()));
+        }
+        uObj["equipments"] = eqArr;
+
         unitsArr.append(uObj);
     }
     root["units"] = unitsArr;
@@ -933,6 +1060,12 @@ bool Game::saveToFile(const QString& path) {
         shopArr.append(slot);
     }
     root["shop"] = shopArr;
+
+    QJsonArray equipBarArr;
+    for (auto* eq : m_equipBar) {
+        equipBarArr.append(static_cast<int>(eq->getType()));
+    }
+    root["equipBar"] = equipBarArr;
 
     QJsonDocument doc(root);
     QFile file(path);
@@ -953,6 +1086,8 @@ bool Game::loadFromFile(const QString& path) {
     m_bench.clear();
     qDeleteAll(m_units);
     m_units.clear();
+    for (auto* eq : m_equipBar) delete eq;
+    m_equipBar.clear();
     m_preCombatPositions.clear();
     m_dragActive = false;
     m_activeUnitId = -1;
@@ -976,6 +1111,13 @@ bool Game::loadFromFile(const QString& path) {
         }
     }
 
+    QJsonArray equipBarArr = root["equipBar"].toArray();
+    for (int i = 0; i < equipBarArr.size(); ++i) {
+        EquipmentType type = static_cast<EquipmentType>(equipBarArr[i].toInt());
+        Equipment* eq = createEquipmentFromType(type);
+        if (eq) m_equipBar.push_back(eq);
+    }
+
     QJsonArray unitsArr = root["units"].toArray();
     int maxId = -1;
     for (int i=0; i<unitsArr.size(); ++i) {
@@ -991,18 +1133,28 @@ bool Game::loadFromFile(const QString& path) {
         u->set_m_id(loadedId);
         if (loadedId > maxId) maxId = loadedId;
 
-        u->set_hp(uObj["hp"].toInt());
-        u->set_maxHp(uObj["maxHp"].toInt());
-        u->set_atk(uObj["atk"].toInt());
-        u->set_range(uObj["range"].toInt());
-        u->set_mana(uObj["mana"].toInt());
-        u->set_maxMana(uObj["maxMana"].toInt());
         u->set_starLevel(uObj["starLevel"].toInt());
         if(uObj.contains("traitLevel")) u->set_traitLevel(uObj["traitLevel"].toInt());
         if(uObj.contains("baseMaxHp")) u->set_baseMaxHp(uObj["baseMaxHp"].toInt());
         if(uObj.contains("baseAtk")) u->set_baseAtk(uObj["baseAtk"].toInt());
         u->setPosition(uObj["posX"].toInt(), uObj["posY"].toInt());
-        
+
+        // Load equipment — add_equipment triggers applyTraitEffects
+        QJsonArray eqArr = uObj["equipments"].toArray();
+        for (int j = 0; j < eqArr.size(); ++j) {
+            EquipmentType type = static_cast<EquipmentType>(eqArr[j].toInt());
+            Equipment* eq = createEquipmentFromType(type);
+            if (eq) u->add_equipment(eq);
+        }
+        // Ensure trait effects are applied even if unit has no equipment
+        if (eqArr.empty()) {
+            u->applyTraitEffects();
+        }
+
+        // Override current HP/Mana with saved values (may differ from max)
+        u->set_hp(uObj["hp"].toInt());
+        u->set_mana(uObj["mana"].toInt());
+
         m_units.append(u);
         
         QPoint pos = u->position();
@@ -1075,4 +1227,201 @@ void Game::updateTraits() {
         u->set_traitLevel(level);
         u->applyTraitEffects();
     }
+}
+
+void Game::rollEquipmentDrop()
+{
+    // 每个回合结束时进行两次装备判定，每次判定有50%概率会掉落一件随机装备到装备栏里
+    for (int i = 0; i < 2; ++i) {
+        if (m_equipBar.size() < 5) {
+            int randVal = std::rand() % 100;
+            if (randVal < 50) {
+                EquipmentType type = static_cast<EquipmentType>(std::rand() % 4);
+                Equipment* eq = nullptr;
+                switch (type) {
+                    case EquipmentType::IronSword: eq = new IronSword(); break;
+                    case EquipmentType::Chainmail: eq = new Chainmail(); break;
+                    case EquipmentType::HasteGloves: eq = new HasteGloves(); break;
+                    case EquipmentType::Sapphire: eq = new Sapphire(); break;
+                }
+                if (eq) {
+                    m_equipBar.push_back(eq);
+                }
+            }
+        }
+    }
+}
+
+void Game::handleEquipDragStarted(Equipment* eq, int sourceSlot, const QPointF& scenePos)
+{
+    if (m_phase != Phase::Prep) return;
+    Q_UNUSED(eq);
+    Q_UNUSED(sourceSlot);
+    Q_UNUSED(scenePos);
+    for (UnitItem* item : m_unitItems) {
+        item->setHighlighted(false);
+    }
+    for (EquipSlotItem* slot : m_equipSlotItems) {
+        slot->setDropActive(false);
+    }
+}
+
+void Game::handleEquipDragMoved(Equipment* eq, int sourceSlot, const QPointF& scenePos)
+{
+    if (m_phase != Phase::Prep) return;
+    Q_UNUSED(eq);
+    Q_UNUSED(sourceSlot);
+    for (UnitItem* item : m_unitItems) {
+        item->setHighlighted(false);
+    }
+    for (EquipSlotItem* slot : m_equipSlotItems) {
+        slot->setDropActive(false);
+    }
+
+    for (UnitItem* item : m_unitItems) {
+        if (item->isVisible() && item->unit() &&
+            item->unit()->get_owner() == Owner::PlayerCtrl &&
+            item->sceneBoundingRect().contains(scenePos)) {
+            item->setHighlighted(true);
+            return;
+        }
+    }
+
+    for (EquipSlotItem* slot : m_equipSlotItems) {
+        if (slot->sceneBoundingRect().contains(scenePos)) {
+            slot->setDropActive(true);
+            return;
+        }
+    }
+}
+
+void Game::handleEquipDropCommand(Equipment* eq, int sourceSlot, const QPointF& scenePos)
+{
+    if (m_phase != Phase::Prep) {
+        syncFromBoard();
+        return;
+    }
+    Q_UNUSED(sourceSlot);
+    // Clear drag highlights
+    for (UnitItem* item : m_unitItems) {
+        item->setHighlighted(false);
+    }
+    for (EquipSlotItem* slot : m_equipSlotItems) {
+        slot->setDropActive(false);
+    }
+
+    // Find if dropped on a unit
+    UnitItem* targetUnitItem = nullptr;
+    for (UnitItem* item : m_unitItems) {
+        if (item->isVisible() && item->sceneBoundingRect().contains(scenePos)) {
+            targetUnitItem = item;
+            break;
+        }
+    }
+
+    // Find if dropped on an equip bar slot
+    int targetBarSlot = -1;
+    for (EquipSlotItem* slot : m_equipSlotItems) {
+        if (slot->sceneBoundingRect().contains(scenePos)) {
+            targetBarSlot = slot->slotIndex();
+            break;
+        }
+    }
+
+    Unit* sourceUnit = nullptr;
+    for (Unit* u : m_units) {
+        for (auto* unitEq : u->get_equipments()) {
+            if (unitEq == eq) {
+                sourceUnit = u;
+                break;
+            }
+        }
+        if (sourceUnit) break;
+    }
+    bool fromBar = false;
+    int barIndex = -1;
+    if (!sourceUnit) {
+        auto it = std::find(m_equipBar.begin(), m_equipBar.end(), eq);
+        if (it != m_equipBar.end()) {
+            fromBar = true;
+            barIndex = static_cast<int>(std::distance(m_equipBar.begin(), it));
+        }
+    }
+
+    // Case 1: Drop on a player-controlled unit
+    if (targetUnitItem && targetUnitItem->unit() && targetUnitItem->unit()->get_owner() == Owner::PlayerCtrl) {
+        Unit* targetUnit = targetUnitItem->unit();
+        if (sourceUnit && sourceUnit != targetUnit) {
+            sourceUnit->remove_equipment(eq);
+            if (!targetUnit->add_equipment(eq)) {
+                auto targetEqs = targetUnit->get_equipments();
+                if (!targetEqs.empty()) {
+                    Equipment* swapEq = targetEqs[0];
+                    targetUnit->remove_equipment(swapEq);
+                    targetUnit->add_equipment(eq);
+                    sourceUnit->add_equipment(swapEq);
+                } else {
+                    sourceUnit->add_equipment(eq);
+                }
+            }
+        } else if (fromBar) {
+            if (targetUnit->add_equipment(eq)) {
+                m_equipBar.erase(std::find(m_equipBar.begin(), m_equipBar.end(), eq));
+            } else {
+                // 目标单位已满 — 交换：新装备穿上，旧装备退回装备栏
+                auto targetEqs = targetUnit->get_equipments();
+                if (!targetEqs.empty()) {
+                    Equipment* swapEq = targetEqs[0];
+                    targetUnit->remove_equipment(swapEq);
+                    targetUnit->add_equipment(eq);
+                    auto it = std::find(m_equipBar.begin(), m_equipBar.end(), eq);
+                    if (it != m_equipBar.end()) {
+                        *it = swapEq;
+                    }
+                }
+            }
+        }
+        syncFromBoard();
+        emit stateUpdated();
+        return;
+    }
+
+    // Case 2: Drop from unit back to equip bar
+    if (sourceUnit && targetBarSlot >= 0) {
+        sourceUnit->remove_equipment(eq);
+        if (static_cast<int>(m_equipBar.size()) < 5) {
+            m_equipBar.push_back(eq);
+        } else {
+            // Bar full, try to swap with the item at target slot
+            if (targetBarSlot < static_cast<int>(m_equipBar.size())) {
+                Equipment* swapEq = m_equipBar[targetBarSlot];
+                m_equipBar.erase(m_equipBar.begin() + targetBarSlot);
+                m_equipBar.insert(m_equipBar.begin() + targetBarSlot, eq);
+                sourceUnit->add_equipment(swapEq);
+            } else {
+                sourceUnit->add_equipment(eq); // revert
+            }
+        }
+        syncFromBoard();
+        emit stateUpdated();
+        return;
+    }
+
+    // Case 3: Reorder within equip bar
+    if (fromBar && targetBarSlot >= 0 && barIndex != targetBarSlot) {
+        m_equipBar.erase(m_equipBar.begin() + barIndex);
+        if (targetBarSlot > barIndex) targetBarSlot--;
+        if (targetBarSlot < static_cast<int>(m_equipBar.size())) {
+            m_equipBar.insert(m_equipBar.begin() + targetBarSlot, eq);
+        } else {
+            m_equipBar.push_back(eq);
+        }
+        syncFromBoard();
+        emit stateUpdated();
+        return;
+    }
+
+    // Case 4: Invalid drop — sync back to original position
+    syncFromBoard();
+    emit stateUpdated();
 }

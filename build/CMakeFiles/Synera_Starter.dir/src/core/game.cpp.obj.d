@@ -344,6 +344,7 @@ CMakeFiles/Synera_Starter.dir/src/core/game.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qvector.h \
  C:/Users/xiaha/Desktop/Synera_starter/src/entity/unit.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:/Users/xiaha/Desktop/Synera_starter/src/core/equipment.h \
  C:\Users\xiaha\Desktop\Synera_starter\src\core\Bench.h \
  C:\Users\xiaha\Desktop\Synera_starter\src\core\shop.h \
  C:/Users/xiaha/Desktop/Synera_starter/src/gui/griditem.h \
@@ -388,6 +389,9 @@ CMakeFiles/Synera_Starter.dir/src/core/game.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtGui/qpixelformat.h \
  C:/Users/xiaha/Desktop/Synera_starter/src/gui/unititem.h \
  C:/Qt/6.11.0/mingw_64/include/QtGui/QPixmap \
+ C:/Users/xiaha/Desktop/Synera_starter/src/gui/equipslotitem.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QRectF \
+ C:/Users/xiaha/Desktop/Synera_starter/src/gui/equipitem.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QGraphicsScene \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qgraphicsscene.h \
  C:/Qt/6.11.0/mingw_64/include/QtGui/qbrush.h \

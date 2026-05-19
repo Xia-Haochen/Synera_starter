@@ -226,6 +226,30 @@ src/core/board.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Synera_Starter.dir\build.make CMakeFiles/Synera_Starter.dir/src/core/board.cpp.s
 .PHONY : src/core/board.cpp.s
 
+src/core/equipment.obj: src/core/equipment.cpp.obj
+.PHONY : src/core/equipment.obj
+
+# target to build an object file
+src/core/equipment.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Synera_Starter.dir\build.make CMakeFiles/Synera_Starter.dir/src/core/equipment.cpp.obj
+.PHONY : src/core/equipment.cpp.obj
+
+src/core/equipment.i: src/core/equipment.cpp.i
+.PHONY : src/core/equipment.i
+
+# target to preprocess a source file
+src/core/equipment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Synera_Starter.dir\build.make CMakeFiles/Synera_Starter.dir/src/core/equipment.cpp.i
+.PHONY : src/core/equipment.cpp.i
+
+src/core/equipment.s: src/core/equipment.cpp.s
+.PHONY : src/core/equipment.s
+
+# target to generate assembly for a file
+src/core/equipment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Synera_Starter.dir\build.make CMakeFiles/Synera_Starter.dir/src/core/equipment.cpp.s
+.PHONY : src/core/equipment.cpp.s
+
 src/core/game.obj: src/core/game.cpp.obj
 .PHONY : src/core/game.obj
 
@@ -297,6 +321,54 @@ src/entity/unit.s: src/entity/unit.cpp.s
 src/entity/unit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Synera_Starter.dir\build.make CMakeFiles/Synera_Starter.dir/src/entity/unit.cpp.s
 .PHONY : src/entity/unit.cpp.s
+
+src/gui/equipitem.obj: src/gui/equipitem.cpp.obj
+.PHONY : src/gui/equipitem.obj
+
+# target to build an object file
+src/gui/equipitem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Synera_Starter.dir\build.make CMakeFiles/Synera_Starter.dir/src/gui/equipitem.cpp.obj
+.PHONY : src/gui/equipitem.cpp.obj
+
+src/gui/equipitem.i: src/gui/equipitem.cpp.i
+.PHONY : src/gui/equipitem.i
+
+# target to preprocess a source file
+src/gui/equipitem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Synera_Starter.dir\build.make CMakeFiles/Synera_Starter.dir/src/gui/equipitem.cpp.i
+.PHONY : src/gui/equipitem.cpp.i
+
+src/gui/equipitem.s: src/gui/equipitem.cpp.s
+.PHONY : src/gui/equipitem.s
+
+# target to generate assembly for a file
+src/gui/equipitem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Synera_Starter.dir\build.make CMakeFiles/Synera_Starter.dir/src/gui/equipitem.cpp.s
+.PHONY : src/gui/equipitem.cpp.s
+
+src/gui/equipslotitem.obj: src/gui/equipslotitem.cpp.obj
+.PHONY : src/gui/equipslotitem.obj
+
+# target to build an object file
+src/gui/equipslotitem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Synera_Starter.dir\build.make CMakeFiles/Synera_Starter.dir/src/gui/equipslotitem.cpp.obj
+.PHONY : src/gui/equipslotitem.cpp.obj
+
+src/gui/equipslotitem.i: src/gui/equipslotitem.cpp.i
+.PHONY : src/gui/equipslotitem.i
+
+# target to preprocess a source file
+src/gui/equipslotitem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Synera_Starter.dir\build.make CMakeFiles/Synera_Starter.dir/src/gui/equipslotitem.cpp.i
+.PHONY : src/gui/equipslotitem.cpp.i
+
+src/gui/equipslotitem.s: src/gui/equipslotitem.cpp.s
+.PHONY : src/gui/equipslotitem.s
+
+# target to generate assembly for a file
+src/gui/equipslotitem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Synera_Starter.dir\build.make CMakeFiles/Synera_Starter.dir/src/gui/equipslotitem.cpp.s
+.PHONY : src/gui/equipslotitem.cpp.s
 
 src/gui/gamewindow.obj: src/gui/gamewindow.cpp.obj
 .PHONY : src/gui/gamewindow.obj
@@ -414,6 +486,9 @@ help:
 	@echo ... src/core/board.obj
 	@echo ... src/core/board.i
 	@echo ... src/core/board.s
+	@echo ... src/core/equipment.obj
+	@echo ... src/core/equipment.i
+	@echo ... src/core/equipment.s
 	@echo ... src/core/game.obj
 	@echo ... src/core/game.i
 	@echo ... src/core/game.s
@@ -423,6 +498,12 @@ help:
 	@echo ... src/entity/unit.obj
 	@echo ... src/entity/unit.i
 	@echo ... src/entity/unit.s
+	@echo ... src/gui/equipitem.obj
+	@echo ... src/gui/equipitem.i
+	@echo ... src/gui/equipitem.s
+	@echo ... src/gui/equipslotitem.obj
+	@echo ... src/gui/equipslotitem.i
+	@echo ... src/gui/equipslotitem.s
 	@echo ... src/gui/gamewindow.obj
 	@echo ... src/gui/gamewindow.i
 	@echo ... src/gui/gamewindow.s

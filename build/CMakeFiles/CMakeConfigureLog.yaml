@@ -38,6 +38,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -70,16 +71,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -120,16 +122,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -183,6 +186,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -211,16 +215,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -252,6 +257,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -280,16 +286,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -321,6 +328,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -349,16 +357,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -390,6 +399,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -418,16 +428,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -459,6 +470,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -487,16 +499,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -528,6 +541,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -556,16 +570,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -597,6 +612,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -625,16 +641,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -666,6 +683,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -694,16 +712,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -735,6 +754,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -763,16 +783,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -804,6 +825,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -832,16 +854,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -873,6 +896,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -917,6 +941,9 @@ events:
       - "C:/Qt/6.11.0/mingw_64/bin/tapi.com"
       - "C:/Qt/6.11.0/mingw_64/bin/tapi.exe"
       - "C:/Qt/6.11.0/mingw_64/bin/tapi"
+      - "C:/Program Files/Git/cmd/tapi.com"
+      - "C:/Program Files/Git/cmd/tapi.exe"
+      - "C:/Program Files/Git/cmd/tapi"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/tapi.com"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/tapi.exe"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/tapi"
@@ -963,16 +990,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1007,6 +1035,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -1051,6 +1080,9 @@ events:
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar-13.1.com"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar-13.1.exe"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar-13.1"
+      - "C:/Program Files/Git/cmd/gcc-ar-13.1.com"
+      - "C:/Program Files/Git/cmd/gcc-ar-13.1.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar-13.1"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-13.1.com"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-13.1.exe"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-13.1"
@@ -1114,6 +1146,9 @@ events:
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar-13.com"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar-13.exe"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar-13"
+      - "C:/Program Files/Git/cmd/gcc-ar-13.com"
+      - "C:/Program Files/Git/cmd/gcc-ar-13.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar-13"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-13.com"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-13.exe"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-13"
@@ -1177,6 +1212,9 @@ events:
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar13.com"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar13.exe"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar13"
+      - "C:/Program Files/Git/cmd/gcc-ar13.com"
+      - "C:/Program Files/Git/cmd/gcc-ar13.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar13"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar13.com"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar13.exe"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar13"
@@ -1224,16 +1262,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1268,6 +1307,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -1312,6 +1352,9 @@ events:
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib-13.1.com"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib-13.1.exe"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib-13.1"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-13.1.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-13.1.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-13.1"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-13.1.com"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-13.1.exe"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-13.1"
@@ -1375,6 +1418,9 @@ events:
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib-13.com"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib-13.exe"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib-13"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-13.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-13.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-13"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-13.com"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-13.exe"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-13"
@@ -1438,6 +1484,9 @@ events:
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib13.com"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib13.exe"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib13"
+      - "C:/Program Files/Git/cmd/gcc-ranlib13.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib13.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib13"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib13.com"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib13.exe"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib13"
@@ -1485,16 +1534,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1535,16 +1585,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -1601,6 +1652,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -1645,6 +1697,9 @@ events:
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar-13.1.com"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar-13.1.exe"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar-13.1"
+      - "C:/Program Files/Git/cmd/gcc-ar-13.1.com"
+      - "C:/Program Files/Git/cmd/gcc-ar-13.1.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar-13.1"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-13.1.com"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-13.1.exe"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-13.1"
@@ -1708,6 +1763,9 @@ events:
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar-13.com"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar-13.exe"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar-13"
+      - "C:/Program Files/Git/cmd/gcc-ar-13.com"
+      - "C:/Program Files/Git/cmd/gcc-ar-13.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar-13"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-13.com"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-13.exe"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar-13"
@@ -1771,6 +1829,9 @@ events:
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar13.com"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar13.exe"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ar13"
+      - "C:/Program Files/Git/cmd/gcc-ar13.com"
+      - "C:/Program Files/Git/cmd/gcc-ar13.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar13"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar13.com"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar13.exe"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ar13"
@@ -1818,16 +1879,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1862,6 +1924,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -1906,6 +1969,9 @@ events:
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib-13.1.com"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib-13.1.exe"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib-13.1"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-13.1.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-13.1.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-13.1"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-13.1.com"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-13.1.exe"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-13.1"
@@ -1969,6 +2035,9 @@ events:
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib-13.com"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib-13.exe"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib-13"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-13.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-13.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-13"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-13.com"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-13.exe"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib-13"
@@ -2032,6 +2101,9 @@ events:
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib13.com"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib13.exe"
       - "C:/Qt/6.11.0/mingw_64/bin/gcc-ranlib13"
+      - "C:/Program Files/Git/cmd/gcc-ranlib13.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib13.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib13"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib13.com"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib13.exe"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/gcc-ranlib13"
@@ -2079,16 +2151,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -2123,6 +2196,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -2163,16 +2237,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Synera_Starter"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -2188,8 +2263,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-yl2vve"
-      binary: "C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-yl2vve"
+      source: "C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-lp430c"
+      binary: "C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-lp430c"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -2199,13 +2274,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-yl2vve'
+        Change Dir: 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-lp430c'
         
-        Run Build Command(s): C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_a478f/fast
-        C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a478f.dir\\build.make CMakeFiles/cmTC_a478f.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-yl2vve'
-        Building C object CMakeFiles/cmTC_a478f.dir/CMakeCCompilerABI.c.obj
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_a478f.dir\\CMakeCCompilerABI.c.obj -c C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c
+        Run Build Command(s): C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_483bc/fast
+        C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_483bc.dir\\build.make CMakeFiles/cmTC_483bc.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-lp430c'
+        Building C object CMakeFiles/cmTC_483bc.dir/CMakeCCompilerABI.c.obj
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_483bc.dir\\CMakeCCompilerABI.c.obj -c C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=C:\\Qt\\Tools\\mingw1310_64\\bin\\gcc.exe
         Target: x86_64-w64-mingw32
@@ -2213,8 +2288,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 13.1.0 (x86_64-posix-seh-rev1, Built by MinGW-Builds project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_a478f.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_a478f.dir\\'
-         C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_a478f.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccmk0IBy.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_483bc.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_483bc.dir\\'
+         C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_483bc.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccwDsXqR.s
         GNU C17 (x86_64-posix-seh-rev1, Built by MinGW-Builds project) version 13.1.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
         
@@ -2231,14 +2306,14 @@ events:
          C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: d7c375444084b5dd0a875da0e5c67862
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_a478f.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_a478f.dir\\'
-         C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_a478f.dir\\CMakeCCompilerABI.c.obj C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccmk0IBy.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_483bc.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_483bc.dir\\'
+         C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_483bc.dir\\CMakeCCompilerABI.c.obj C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccwDsXqR.s
         GNU assembler version 2.39 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.39
         COMPILER_PATH=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_a478f.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_a478f.dir\\CMakeCCompilerABI.c.'
-        Linking C executable cmTC_a478f.exe
-        C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_a478f.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_483bc.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_483bc.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_483bc.exe
+        C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_483bc.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\Qt\\Tools\\mingw1310_64\\bin\\gcc.exe
         COLLECT_LTO_WRAPPER=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
@@ -2249,16 +2324,16 @@ events:
         gcc version 13.1.0 (x86_64-posix-seh-rev1, Built by MinGW-Builds project) 
         COMPILER_PATH=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a478f.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_a478f.'
-         C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccaWqcu9.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_a478f.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_a478f.dir/objects.a --no-whole-archive --out-implib libcmTC_a478f.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_483bc.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_483bc.'
+         C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccnoA1uu.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_483bc.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_483bc.dir/objects.a --no-whole-archive --out-implib libcmTC_483bc.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
         collect2 version 13.1.0
-        C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccaWqcu9.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_a478f.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_a478f.dir/objects.a --no-whole-archive --out-implib libcmTC_a478f.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccnoA1uu.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_483bc.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_483bc.dir/objects.a --no-whole-archive --out-implib libcmTC_483bc.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
         GNU ld (GNU Binutils) 2.39
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a478f.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_a478f.'
-        C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_a478f.dir/objects.a
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_a478f.dir/objects.a @CMakeFiles\\cmTC_a478f.dir\\objects1.rsp
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_a478f.dir/objects.a -Wl,--no-whole-archive -o cmTC_a478f.exe -Wl,--out-implib,libcmTC_a478f.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-yl2vve'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_483bc.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_483bc.'
+        C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_483bc.dir/objects.a
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_483bc.dir/objects.a @CMakeFiles\\cmTC_483bc.dir\\objects1.rsp
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_483bc.dir/objects.a -Wl,--no-whole-archive -o cmTC_483bc.exe -Wl,--out-implib,libcmTC_483bc.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-lp430c'
         
       exitCode: 0
   -
@@ -2291,13 +2366,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-yl2vve']
+        ignore line: [Change Dir: 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-lp430c']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_a478f/fast]
-        ignore line: [C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a478f.dir\\build.make CMakeFiles/cmTC_a478f.dir/build]
-        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-yl2vve']
-        ignore line: [Building C object CMakeFiles/cmTC_a478f.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\Qt\\Tools\\mingw1310_64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_a478f.dir\\CMakeCCompilerABI.c.obj -c C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_483bc/fast]
+        ignore line: [C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_483bc.dir\\build.make CMakeFiles/cmTC_483bc.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-lp430c']
+        ignore line: [Building C object CMakeFiles/cmTC_483bc.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\Qt\\Tools\\mingw1310_64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_483bc.dir\\CMakeCCompilerABI.c.obj -c C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\Qt\\Tools\\mingw1310_64\\bin\\gcc.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -2305,8 +2380,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 13.1.0 (x86_64-posix-seh-rev1  Built by MinGW-Builds project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_a478f.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_a478f.dir\\']
-        ignore line: [ C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_a478f.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccmk0IBy.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_483bc.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_483bc.dir\\']
+        ignore line: [ C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_483bc.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccwDsXqR.s]
         ignore line: [GNU C17 (x86_64-posix-seh-rev1  Built by MinGW-Builds project) version 13.1.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
         ignore line: []
@@ -2323,8 +2398,8 @@ events:
         ignore line: [ C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: d7c375444084b5dd0a875da0e5c67862]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_a478f.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_a478f.dir\\']
-        ignore line: [ C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_a478f.dir\\CMakeCCompilerABI.c.obj C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccmk0IBy.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_483bc.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_483bc.dir\\']
+        ignore line: [ C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_483bc.dir\\CMakeCCompilerABI.c.obj C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccwDsXqR.s]
         ignore line: [GNU assembler version 2.39 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.39]
         ignore line: [COMPILER_PATH=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/]
@@ -2335,9 +2410,9 @@ events:
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_a478f.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_a478f.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_a478f.exe]
-        ignore line: [C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_a478f.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_483bc.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_483bc.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_483bc.exe]
+        ignore line: [C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_483bc.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\Qt\\Tools\\mingw1310_64\\bin\\gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
@@ -2355,13 +2430,13 @@ events:
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a478f.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_a478f.']
-        link line: [ C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccaWqcu9.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_a478f.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_a478f.dir/objects.a --no-whole-archive --out-implib libcmTC_a478f.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_483bc.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_483bc.']
+        link line: [ C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccnoA1uu.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_483bc.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_483bc.dir/objects.a --no-whole-archive --out-implib libcmTC_483bc.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
           arg [C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccaWqcu9.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccnoA1uu.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -2387,7 +2462,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_a478f.exe] ==> ignore
+          arg [cmTC_483bc.exe] ==> ignore
           arg [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o] ==> obj [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o]
           arg [-LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0] ==> dir [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0]
@@ -2398,10 +2473,10 @@ events:
           arg [-LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..] ==> dir [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_a478f.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_483bc.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_a478f.dll.a] ==> ignore
+          arg [libcmTC_483bc.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2486,8 +2561,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-r455o8"
-      binary: "C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-r455o8"
+      source: "C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-15htfb"
+      binary: "C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-15htfb"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2498,13 +2573,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-r455o8'
+        Change Dir: 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-15htfb'
         
-        Run Build Command(s): C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_0600c/fast
-        C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_0600c.dir\\build.make CMakeFiles/cmTC_0600c.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-r455o8'
-        Building CXX object CMakeFiles/cmTC_0600c.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_0600c.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp
+        Run Build Command(s): C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_b1ab8/fast
+        C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b1ab8.dir\\build.make CMakeFiles/cmTC_b1ab8.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-15htfb'
+        Building CXX object CMakeFiles/cmTC_b1ab8.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_b1ab8.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=C:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe
         Target: x86_64-w64-mingw32
@@ -2512,8 +2587,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 13.1.0 (x86_64-posix-seh-rev1, Built by MinGW-Builds project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_0600c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_0600c.dir\\'
-         C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_0600c.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccVPvRvU.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b1ab8.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b1ab8.dir\\'
+         C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_b1ab8.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccLY4ksc.s
         GNU C++17 (x86_64-posix-seh-rev1, Built by MinGW-Builds project) version 13.1.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
         
@@ -2536,14 +2611,14 @@ events:
          C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: b3d236387f35294e2a73c51628039e05
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_0600c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_0600c.dir\\'
-         C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_0600c.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccVPvRvU.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b1ab8.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b1ab8.dir\\'
+         C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_b1ab8.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccLY4ksc.s
         GNU assembler version 2.39 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.39
         COMPILER_PATH=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_0600c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_0600c.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_0600c.exe
-        C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_0600c.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b1ab8.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b1ab8.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_b1ab8.exe
+        C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_b1ab8.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe
         COLLECT_LTO_WRAPPER=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
@@ -2554,16 +2629,16 @@ events:
         gcc version 13.1.0 (x86_64-posix-seh-rev1, Built by MinGW-Builds project) 
         COMPILER_PATH=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0600c.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_0600c.'
-         C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccgmznrv.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_0600c.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_0600c.dir/objects.a --no-whole-archive --out-implib libcmTC_0600c.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b1ab8.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_b1ab8.'
+         C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccIq0m6R.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_b1ab8.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_b1ab8.dir/objects.a --no-whole-archive --out-implib libcmTC_b1ab8.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
         collect2 version 13.1.0
-        C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccgmznrv.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_0600c.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_0600c.dir/objects.a --no-whole-archive --out-implib libcmTC_0600c.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccIq0m6R.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_b1ab8.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_b1ab8.dir/objects.a --no-whole-archive --out-implib libcmTC_b1ab8.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
         GNU ld (GNU Binutils) 2.39
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0600c.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_0600c.'
-        C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_0600c.dir/objects.a
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_0600c.dir/objects.a @CMakeFiles\\cmTC_0600c.dir\\objects1.rsp
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_0600c.dir/objects.a -Wl,--no-whole-archive -o cmTC_0600c.exe -Wl,--out-implib,libcmTC_0600c.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-r455o8'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b1ab8.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_b1ab8.'
+        C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_b1ab8.dir/objects.a
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_b1ab8.dir/objects.a @CMakeFiles\\cmTC_b1ab8.dir\\objects1.rsp
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_b1ab8.dir/objects.a -Wl,--no-whole-archive -o cmTC_b1ab8.exe -Wl,--out-implib,libcmTC_b1ab8.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-15htfb'
         
       exitCode: 0
   -
@@ -2602,13 +2677,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-r455o8']
+        ignore line: [Change Dir: 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-15htfb']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_0600c/fast]
-        ignore line: [C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_0600c.dir\\build.make CMakeFiles/cmTC_0600c.dir/build]
-        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-r455o8']
-        ignore line: [Building CXX object CMakeFiles/cmTC_0600c.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_0600c.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_b1ab8/fast]
+        ignore line: [C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b1ab8.dir\\build.make CMakeFiles/cmTC_b1ab8.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-15htfb']
+        ignore line: [Building CXX object CMakeFiles/cmTC_b1ab8.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_b1ab8.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -2616,8 +2691,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 13.1.0 (x86_64-posix-seh-rev1  Built by MinGW-Builds project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_0600c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_0600c.dir\\']
-        ignore line: [ C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_0600c.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccVPvRvU.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b1ab8.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b1ab8.dir\\']
+        ignore line: [ C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_b1ab8.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccLY4ksc.s]
         ignore line: [GNU C++17 (x86_64-posix-seh-rev1  Built by MinGW-Builds project) version 13.1.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
         ignore line: []
@@ -2640,8 +2715,8 @@ events:
         ignore line: [ C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: b3d236387f35294e2a73c51628039e05]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_0600c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_0600c.dir\\']
-        ignore line: [ C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_0600c.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccVPvRvU.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b1ab8.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b1ab8.dir\\']
+        ignore line: [ C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_b1ab8.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccLY4ksc.s]
         ignore line: [GNU assembler version 2.39 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.39]
         ignore line: [COMPILER_PATH=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/]
@@ -2652,9 +2727,9 @@ events:
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_0600c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_0600c.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_0600c.exe]
-        ignore line: [C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_0600c.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b1ab8.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b1ab8.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_b1ab8.exe]
+        ignore line: [C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_b1ab8.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
@@ -2672,13 +2747,13 @@ events:
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0600c.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_0600c.']
-        link line: [ C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccgmznrv.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_0600c.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_0600c.dir/objects.a --no-whole-archive --out-implib libcmTC_0600c.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b1ab8.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_b1ab8.']
+        link line: [ C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccIq0m6R.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_b1ab8.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_b1ab8.dir/objects.a --no-whole-archive --out-implib libcmTC_b1ab8.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
           arg [C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccgmznrv.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\xiaha\\AppData\\Local\\Temp\\ccIq0m6R.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -2704,7 +2779,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_0600c.exe] ==> ignore
+          arg [cmTC_b1ab8.exe] ==> ignore
           arg [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o] ==> obj [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o]
           arg [-LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0] ==> dir [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0]
@@ -2715,10 +2790,10 @@ events:
           arg [-LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..] ==> dir [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_0600c.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_b1ab8.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_0600c.dll.a] ==> ignore
+          arg [libcmTC_b1ab8.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2809,8 +2884,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-6tjowu"
-      binary: "C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-6tjowu"
+      source: "C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-wha6sf"
+      binary: "C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-wha6sf"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -2821,19 +2896,19 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-6tjowu'
+        Change Dir: 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-wha6sf'
         
-        Run Build Command(s): C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_17fee/fast
-        C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_17fee.dir\\build.make CMakeFiles/cmTC_17fee.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-6tjowu'
-        Building C object CMakeFiles/cmTC_17fee.dir/src.c.obj
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles\\cmTC_17fee.dir\\src.c.obj -c C:\\Users\\xiaha\\Desktop\\Synera_starter\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6tjowu\\src.c
-        Linking C executable cmTC_17fee.exe
-        C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_17fee.dir\\link.txt --verbose=1
-        C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_17fee.dir/objects.a
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_17fee.dir/objects.a @CMakeFiles\\cmTC_17fee.dir\\objects1.rsp
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_17fee.dir/objects.a -Wl,--no-whole-archive -o cmTC_17fee.exe -Wl,--out-implib,libcmTC_17fee.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_17fee.dir\\linkLibs.rsp
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-6tjowu'
+        Run Build Command(s): C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_c9b5c/fast
+        C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c9b5c.dir\\build.make CMakeFiles/cmTC_c9b5c.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-wha6sf'
+        Building C object CMakeFiles/cmTC_c9b5c.dir/src.c.obj
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles\\cmTC_c9b5c.dir\\src.c.obj -c C:\\Users\\xiaha\\Desktop\\Synera_starter\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wha6sf\\src.c
+        Linking C executable cmTC_c9b5c.exe
+        C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_c9b5c.dir\\link.txt --verbose=1
+        C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_c9b5c.dir/objects.a
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_c9b5c.dir/objects.a @CMakeFiles\\cmTC_c9b5c.dir\\objects1.rsp
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_c9b5c.dir/objects.a -Wl,--no-whole-archive -o cmTC_c9b5c.exe -Wl,--out-implib,libcmTC_c9b5c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_c9b5c.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-wha6sf'
         
       exitCode: 0
   -
@@ -2852,8 +2927,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-eux4bd"
-      binary: "C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-eux4bd"
+      source: "C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-1s4sse"
+      binary: "C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-1s4sse"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2864,19 +2939,19 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-eux4bd'
+        Change Dir: 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-1s4sse'
         
-        Run Build Command(s): C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_f015e/fast
-        C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f015e.dir\\build.make CMakeFiles/cmTC_f015e.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-eux4bd'
-        Building CXX object CMakeFiles/cmTC_f015e.dir/src.cxx.obj
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles\\cmTC_f015e.dir\\src.cxx.obj -c C:\\Users\\xiaha\\Desktop\\Synera_starter\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eux4bd\\src.cxx
-        Linking CXX executable cmTC_f015e.exe
-        C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_f015e.dir\\link.txt --verbose=1
-        C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_f015e.dir/objects.a
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_f015e.dir/objects.a @CMakeFiles\\cmTC_f015e.dir\\objects1.rsp
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -Wl,--whole-archive CMakeFiles\\cmTC_f015e.dir/objects.a -Wl,--no-whole-archive -o cmTC_f015e.exe -Wl,--out-implib,libcmTC_f015e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_f015e.dir\\linkLibs.rsp
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-eux4bd'
+        Run Build Command(s): C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_c0078/fast
+        C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c0078.dir\\build.make CMakeFiles/cmTC_c0078.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-1s4sse'
+        Building CXX object CMakeFiles/cmTC_c0078.dir/src.cxx.obj
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles\\cmTC_c0078.dir\\src.cxx.obj -c C:\\Users\\xiaha\\Desktop\\Synera_starter\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s4sse\\src.cxx
+        Linking CXX executable cmTC_c0078.exe
+        C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_c0078.dir\\link.txt --verbose=1
+        C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_c0078.dir/objects.a
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_c0078.dir/objects.a @CMakeFiles\\cmTC_c0078.dir\\objects1.rsp
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -Wl,--whole-archive CMakeFiles\\cmTC_c0078.dir/objects.a -Wl,--no-whole-archive -o cmTC_c0078.exe -Wl,--out-implib,libcmTC_c0078.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_c0078.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/xiaha/Desktop/Synera_starter/build/CMakeFiles/CMakeScratch/TryCompile-1s4sse'
         
       exitCode: 0
   -
@@ -2998,16 +3073,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Synera_Starter"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3119,16 +3195,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Synera_Starter"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3171,6 +3248,7 @@ events:
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -3213,16 +3291,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Synera_Starter"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3342,16 +3421,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Synera_Starter"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3480,16 +3560,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Synera_Starter"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3615,16 +3696,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Synera_Starter"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3673,6 +3755,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -3705,6 +3788,7 @@ events:
       - "C:/Windows/System32/OpenSSH/vulkan/vulkan.h"
       - "C:/msys64/ucrt64/bin/vulkan/vulkan.h"
       - "C:/Qt/6.11.0/mingw_64/bin/vulkan/vulkan.h"
+      - "C:/Program Files/Git/cmd/vulkan/vulkan.h"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/vulkan/vulkan.h"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/vulkan/vulkan.h"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/vulkan/vulkan.h"
@@ -3741,16 +3825,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Synera_Starter"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3799,6 +3884,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -3833,6 +3919,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -3871,16 +3958,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Synera_Starter"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3934,6 +4022,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -3999,6 +4088,9 @@ events:
       - "C:/Qt/6.11.0/mingw_64/bin/glslc.com"
       - "C:/Qt/6.11.0/mingw_64/bin/glslc.exe"
       - "C:/Qt/6.11.0/mingw_64/bin/glslc"
+      - "C:/Program Files/Git/cmd/glslc.com"
+      - "C:/Program Files/Git/cmd/glslc.exe"
+      - "C:/Program Files/Git/cmd/glslc"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/glslc.com"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/glslc.exe"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/glslc"
@@ -4083,16 +4175,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Synera_Starter"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -4142,6 +4235,7 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/msys64/ucrt64/bin/"
       - "C:/Qt/6.11.0/mingw_64/bin/"
+      - "C:/Program Files/Git/cmd/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
@@ -4207,6 +4301,9 @@ events:
       - "C:/Qt/6.11.0/mingw_64/bin/glslangValidator.com"
       - "C:/Qt/6.11.0/mingw_64/bin/glslangValidator.exe"
       - "C:/Qt/6.11.0/mingw_64/bin/glslangValidator"
+      - "C:/Program Files/Git/cmd/glslangValidator.com"
+      - "C:/Program Files/Git/cmd/glslangValidator.exe"
+      - "C:/Program Files/Git/cmd/glslangValidator"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/glslangValidator.com"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/glslangValidator.exe"
       - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/glslangValidator"
@@ -4291,16 +4388,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Synera_Starter"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -4428,16 +4526,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Synera_Starter"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -4557,16 +4656,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Synera_Starter"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -6400,16 +6500,17 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:/msys64/ucrt64/bin"
         - "C:\\Qt\\6.11.0\\mingw_64\\bin"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/Scripts/"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:/Users/xiaha/AppData/Local/Programs/Python/Launcher/"
-        - "C:\\Users\\xiaha\\.local\\bin"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WindowsApps"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:/Program Files/JetBrains/CLion 2026.1.1/bin"
-        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin"
+        - "C:/Program Files/Git/cmd"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:/Users/xiaha/AppData/Local/Programs/Python/Python313/"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:/Users/xiaha/.local/bin"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\xiaha\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot.Prerelease_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:/Users/xiaha/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\Program Files\\JetBrains\\CLion 2026.1.1\\bin"
+        - "C:/Users/xiaha/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Synera_Starter"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"

@@ -94,6 +94,12 @@ Unit::Unit(const Unit& other)
     // TODO[T3-4]: 复制构造函数，确保在合成进阶（3合1）时正确复制单位属性和状态
 }
 
+Unit::~Unit()
+{
+    for (auto* eq : m_equipments) delete eq;
+    m_equipments.clear();
+}
+
 void Unit::find_target(Game& game)
 {
     // TODO[T2-2]: 实现寻找目标的逻辑，通常是扫描敌方单位列表，找到距离最近且在攻击范围内的单位，并设置 has_target=true 和 target 指针
@@ -210,13 +216,42 @@ void Unit::applyTraitEffects()
         HP = Max_HP * ratio;
         if (HP <= 0 && is_alive) HP = 1;
     }
+
+    // Apply equipment effects after base and trait
+    for (auto* eq : m_equipments) {
+        eq->applyEffect(this);
+    }
+}
+
+bool Unit::add_equipment(Equipment* eq) {
+    if (m_equipments.size() >= 1) {
+        return false;
+    }
+    m_equipments.push_back(eq);
+    applyTraitEffects(); // Re-evaluate total stats
+    return true;
+}
+
+void Unit::remove_equipment(Equipment* eq) {
+    auto it = std::find(m_equipments.begin(), m_equipments.end(), eq);
+    if (it != m_equipments.end()) {
+        m_equipments.erase(it);
+        applyTraitEffects();
+    }
+}
+
+bool Unit::has_haste_gloves() const {
+    for (auto* eq : m_equipments) {
+        if (eq->getType() == EquipmentType::HasteGloves) return true;
+    }
+    return false;
 }
 
 // finish: TODO[T2-5]: 实现 attack(Unit* target) 虚函数，加入攻速（每 x 帧一次）逻辑，每次普攻计算伤害并令自身每次普攻回复10点蓝
 
 // finish: TODO[T2-5]: 实现 takeDamage(int amount) 虚函数，收到伤害降低当前 HP，若 HP<=0 标为死亡，清空站位
 
-// TODO[T3-4/T3-5]: 析构或清除时处理资源，比如掉落可能身上的脱落装备，处理合并进阶(3合1)等
+// finish: TODO[T3-4/T3-5]: 析构时清理装备资源，合并/出售时退还装备到装备栏
 
 Warrior::Warrior(const QString& name, Owner Camp)
     : Unit(name, RoleTemplate<JobType::Warrior>().attr)

@@ -16,6 +16,8 @@ class Unit;
 class QGraphicsScene;
 class GridItem;
 class UnitItem;
+class EquipSlotItem;
+class EquipItem;
 
 enum class Phase { Prep, Combat, Resolve };
 
@@ -56,6 +58,7 @@ public:
     void resolveCombat();
     void resetUnitsToPrep();
     void cleanupDeadUnits(); // 清理场上阵亡单位
+    void rollEquipmentDrop(); // 进行回合结束时的装备掉落
 
     Phase getPhase() const { return m_phase; }
     PlayerState& getPlayerState() { return m_playerState; }
@@ -78,7 +81,7 @@ signals:
     void stateUpdated();
     void gameEnded(bool isVictory);
 
-    // TODO[T3-1/T3-2]: 增加商店与经济入口（rollShop()/buyUnit()/refreshShop()/upgradePopulation()）。
+    // finish: TODO[T3-1/T3-2]: 商店与经济入口已完成（buyFromShopSlot/rollShop/sellUnit）。
 public:
     bool saveToFile(const QString& path);
     bool loadFromFile(const QString& path);
@@ -106,6 +109,11 @@ private:
     void syncFromBoard();
     // finish: TODO[T1-3]: 同步单位血条/蓝条/属性面板到图元。
     
+    // Equip GUI handling
+    void handleEquipDragStarted(Equipment* eq, int sourceSlot, const QPointF& scenePos);
+    void handleEquipDragMoved(Equipment* eq, int sourceSlot, const QPointF& scenePos);
+    void handleEquipDropCommand(Equipment* eq, int sourceSlot, const QPointF& scenePos);
+    
     // 定时器触发的每一次战斗逻辑循环
     void combatTick();
 
@@ -122,10 +130,13 @@ private:
     Bench m_bench;
     Shop m_shop;
     QList<Unit*> m_units;
+    std::vector<Equipment*> m_equipBar;
 
     QGraphicsScene* m_scene;
     std::vector<GridItem*> m_gridItems;
     std::vector<UnitItem*> m_unitItems;
+    std::vector<EquipSlotItem*> m_equipSlotItems;
+    std::vector<EquipItem*> m_equipUIItems;
 
     // 当前拖拽上下文。
     bool m_dragActive;
@@ -145,6 +156,7 @@ private:
     class QTimer* m_combatTimer;
     int m_combatUnitIndex = -1;   // 当前轮到哪个单位行动
     int m_actingUnitId = -1;      // 正在行动的单位 ID（用于高亮）
+    bool m_hasteSecondAction = false; // 是否是急速手套触发的额外行动
 
     // 出售区域
     GridItem* m_sellZoneItem = nullptr;

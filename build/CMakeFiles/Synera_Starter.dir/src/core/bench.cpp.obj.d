@@ -301,6 +301,7 @@ CMakeFiles/Synera_Starter.dir/src/core/bench.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q20utility.h \
  C:/Users/xiaha/Desktop/Synera_starter/src/entity/unit.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:/Users/xiaha/Desktop/Synera_starter/src/core/equipment.h \
  C:\Users\xiaha\Desktop\Synera_starter\src\core\board.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QHash \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qhash.h

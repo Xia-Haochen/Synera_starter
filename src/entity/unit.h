@@ -3,11 +3,14 @@
 
 #include <QPoint>
 #include <QString>
-// TODO[T3-5]: 添加装备(Equipment)类前置声明或枚举，PA要求支持玩家给单位穿戴装备（如铁剑、锁子甲等）
+// finish: TODO[T3-5]: 装备(Equipment)类已引入，支持玩家给单位穿戴装备
 
 // TODO[T2-2]: 定义战斗状态机枚举，例如 enum class State { Idle, Moving, Attacking, Casting, Dead };
 
 class Game; // 前置声明，避免循环依赖
+
+#include "core/equipment.h"
+#include <vector>
 
 struct UnitStats {
     int hp = 300, maxHp = 300;
@@ -20,7 +23,6 @@ struct UnitStats {
 enum class Owner { PlayerCtrl, EnemyCtrl };
 enum class UnitState { Idle, Moving, Attacking, Casting, Dead };
 enum class Trait { Warrior, Mage, Ranger, Guardian, Assassin, Priest };
-enum class EquipType { Sword, ChainVest, Gloves, Crystal };
 
 struct Role_Template
 {
@@ -70,8 +72,7 @@ public:
     explicit Unit(const QString& name = QString("Unit"));
     explicit Unit(const QString& name, Role_Template t);
     Unit(const Unit& other);
-    // finish TODO[T0-2]: 将析构函数改为虚析构函数 virtual ~Unit() = default; 以支持多态衍生类的安全释放
-    virtual ~Unit() = default;
+    virtual ~Unit();
 
     int id() const { return m_id; }
     QString name() const { return m_name; }
@@ -101,6 +102,12 @@ public:
     int get_baseAtk() const { return Base_ATK; }
     int get_baseRange() const { return Base_Range; }
     int get_baseMaxMana() const { return Base_Max_Mana; }
+    
+    // Equipment related
+    const std::vector<Equipment*>& get_equipments() const { return m_equipments; }
+    bool add_equipment(Equipment* eq);
+    void remove_equipment(Equipment* eq);
+    bool has_haste_gloves() const;
 
     void set_traitLevel(int level) { Trait_Level = level; }
     void set_baseMaxHp(int hp) { Base_Max_HP = hp; }
@@ -167,6 +174,7 @@ private:
     int Base_ATK; //无羁绊时的基础攻击力
     int Base_Range; //无羁绊时的基础攻击范围
     int Base_Max_Mana; //无羁绊时的基础最大法力值
+    std::vector<Equipment*> m_equipments;
     // TODO[T2-2/T2-3]: 增加一个成员维护当前状态机的状态 state，以及寻找的目标敌方单位指针 Unit* current_target;
     // TODO[T3-5]: 增加装备槽数据结构(如 std::vector<Equipment*> eq)，PA要求1星最多1件，2星可选扩展2件
 };

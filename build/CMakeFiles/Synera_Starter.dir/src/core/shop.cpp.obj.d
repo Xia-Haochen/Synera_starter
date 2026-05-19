@@ -330,4 +330,5 @@ CMakeFiles/Synera_Starter.dir/src/core/shop.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qcheckedint_impl.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q23utility.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q20utility.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/QString
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:/Users/xiaha/Desktop/Synera_starter/src/core/equipment.h

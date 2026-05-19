@@ -319,4 +319,5 @@ C:/Users/xiaha/Desktop/Synera_starter/build/Synera_Starter_autogen/PRMOGMWJPH/mo
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/xiaha/Desktop/Synera_starter/src/core/equipment.h \
   C:/Users/xiaha/Desktop/Synera_starter/src/entity/unit.h

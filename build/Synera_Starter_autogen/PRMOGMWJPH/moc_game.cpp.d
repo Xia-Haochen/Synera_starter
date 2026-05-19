@@ -333,5 +333,6 @@ C:/Users/xiaha/Desktop/Synera_starter/build/Synera_Starter_autogen/PRMOGMWJPH/mo
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Users/xiaha/Desktop/Synera_starter/src/core/Bench.h \
   C:/Users/xiaha/Desktop/Synera_starter/src/core/board.h \
+  C:/Users/xiaha/Desktop/Synera_starter/src/core/equipment.h \
   C:/Users/xiaha/Desktop/Synera_starter/src/core/shop.h \
   C:/Users/xiaha/Desktop/Synera_starter/src/entity/unit.h

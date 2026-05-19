@@ -303,6 +303,7 @@ CMakeFiles/Synera_Starter.dir/src/core/board.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qvector.h \
  C:/Users/xiaha/Desktop/Synera_starter/src/entity/unit.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:/Users/xiaha/Desktop/Synera_starter/src/core/equipment.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/queue \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \

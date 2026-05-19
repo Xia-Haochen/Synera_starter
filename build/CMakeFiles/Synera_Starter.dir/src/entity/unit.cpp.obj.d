@@ -291,6 +291,7 @@ CMakeFiles/Synera_Starter.dir/src/entity/unit.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q23utility.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/q20utility.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:/Users/xiaha/Desktop/Synera_starter/src/core/equipment.h \
  C:/Users/xiaha/Desktop/Synera_starter/src/core/game.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QObject \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qobject.h \
