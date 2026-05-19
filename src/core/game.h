@@ -70,6 +70,8 @@ public:
     void buyFromShopSlot(int slotIndex);
     void rollShop();
 
+    void checkAndMerge(Unit* newUnit);
+
 signals:
     void phaseChanged(Phase newPhase);
     void stateUpdated();

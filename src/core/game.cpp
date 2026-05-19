@@ -61,10 +61,10 @@ void Game::reset()
     m_combatUnitIndex = -1;
     m_actingUnitId = -1;
     m_playerState.round = 1;
-    m_playerState.hp = 10; // 重置为初始满血
-    m_playerState.gold = 0; // 重置金币为 0
-    m_playerState.level = 1;
-    m_playerState.boardCap = 7;
+    m_playerState.hp = PlayerState().hp ; // 重置为初始满血
+    m_playerState.gold = PlayerState().gold; // 重置金币为初始值
+    m_playerState.level = PlayerState().level; // 重置等级为初始值
+    m_playerState.boardCap = PlayerState().boardCap; // 重置人口上限为初始值
 
     // 彻底销毁当前所有残留的单位对象内存（不论敌我）
     qDeleteAll(m_units);
@@ -611,8 +611,71 @@ void Game::buyFromShopSlot(int slotIndex)
     // 标记商店槽位为空
     m_shop.clearSlot(slotIndex);
 
+    checkAndMerge(newUnit);
+
     syncFromBoard();
     emit stateUpdated();
+}
+
+void Game::checkAndMerge(Unit* newUnit)
+{
+    if (!newUnit) return;
+    int targetStar = newUnit->get_starLevel();
+    if (targetStar >= 3) return; // 最高3星
+
+    // 查找同一阵营、相同职业、相同星级的单位
+    QList<Unit*> identicalUnits;
+    for (Unit* u : m_units) {
+        if (u->get_owner() == Owner::PlayerCtrl && 
+            u->get_job() == newUnit->get_job() && 
+            u->get_starLevel() == targetStar) {
+            identicalUnits.append(u);
+        }
+    }
+
+    if (identicalUnits.size() >= 3) {
+        // 保留刚获得的单位，移除其他两个
+        Unit* keepUnit = newUnit;
+        QList<Unit*> removeUnits;
+        int removedCount = 0;
+        for (Unit* u : identicalUnits) {
+            if (u != keepUnit && removedCount < 2) {
+                removeUnits.append(u);
+                removedCount++;
+            }
+        }
+
+        if (removedCount == 2) {
+            // 移除这两个单位
+            for (Unit* u : removeUnits) {
+                QPoint p = u->position();
+                if (isBenchPos(p)) {
+                    m_bench.removeUnit(u);
+                } else {
+                    m_board.removeUnit(u);
+                }
+                m_units.removeOne(u);
+                if (m_unitItemById.count(u->id())) {
+                    UnitItem* item = m_unitItemById[u->id()];
+                    m_scene->removeItem(item);
+                    m_unitItemById.erase(u->id());
+                    m_unitItems.erase(std::remove(m_unitItems.begin(), m_unitItems.end(), item), m_unitItems.end());
+                    delete item;
+                }
+                delete u;
+            }
+
+            // 升星处理
+            keepUnit->set_starLevel(targetStar + 1);
+            // 属性翻倍
+            keepUnit->set_maxHp(keepUnit->get_maxHp() * 2);
+            keepUnit->set_hp(keepUnit->get_maxHp());
+            keepUnit->set_atk(keepUnit->get_atk() * 2);
+
+            // 递归检查是否能继续合成（如3个2星合1个3星）
+            checkAndMerge(keepUnit);
+        }
+    }
 }
 
 void Game::rollShop()
