@@ -667,10 +667,11 @@ void Game::checkAndMerge(Unit* newUnit)
 
             // 升星处理
             keepUnit->set_starLevel(targetStar + 1);
-            // 属性翻倍
-            keepUnit->set_maxHp(keepUnit->get_maxHp() * 2);
+            // 基础属性翻倍，重新结算羁绊并恢复满血
+            keepUnit->set_baseMaxHp(keepUnit->get_baseMaxHp() * 2);
+            keepUnit->set_baseAtk(keepUnit->get_baseAtk() * 2);
+            keepUnit->applyTraitEffects(); // 更新加成后的属性
             keepUnit->set_hp(keepUnit->get_maxHp());
-            keepUnit->set_atk(keepUnit->get_atk() * 2);
 
             // 递归检查是否能继续合成（如3个2星合1个3星）
             checkAndMerge(keepUnit);
@@ -803,6 +804,9 @@ void Game::buildScene()
 
 void Game::syncFromBoard()
 {
+    if (m_phase == Phase::Prep) {
+        updateTraits();
+    }
     // 统一回写单位可见性与坐标。
     clearGridHighlights();
 
@@ -910,6 +914,9 @@ bool Game::saveToFile(const QString& path) {
         uObj["mana"] = u->get_mana();
         uObj["maxMana"] = u->get_maxMana();
         uObj["starLevel"] = u->get_starLevel();
+        uObj["traitLevel"] = u->get_traitLevel();
+        uObj["baseMaxHp"] = u->get_baseMaxHp();
+        uObj["baseAtk"] = u->get_baseAtk();
         uObj["posX"] = u->position().x();
         uObj["posY"] = u->position().y();
         unitsArr.append(uObj);
@@ -991,6 +998,9 @@ bool Game::loadFromFile(const QString& path) {
         u->set_mana(uObj["mana"].toInt());
         u->set_maxMana(uObj["maxMana"].toInt());
         u->set_starLevel(uObj["starLevel"].toInt());
+        if(uObj.contains("traitLevel")) u->set_traitLevel(uObj["traitLevel"].toInt());
+        if(uObj.contains("baseMaxHp")) u->set_baseMaxHp(uObj["baseMaxHp"].toInt());
+        if(uObj.contains("baseAtk")) u->set_baseAtk(uObj["baseAtk"].toInt());
         u->setPosition(uObj["posX"].toInt(), uObj["posY"].toInt());
         
         m_units.append(u);
@@ -1019,4 +1029,50 @@ bool Game::loadFromFile(const QString& path) {
     emit stateUpdated();
     emit phaseChanged(m_phase);
     return true;
+}
+
+void Game::updateTraits() {
+
+    int warriorCountPlay = 0, mageCountPlay = 0, archerCountPlay = 0;
+    int warriorCountEnem = 0, mageCountEnem = 0, archerCountEnem = 0;
+
+    for (Unit* u : m_units) {
+        if (!u->get_isAlive() || !m_board.hasUnitAt(u->position())) continue;
+        int stars = u->get_starLevel();
+        if (u->get_owner() == Owner::PlayerCtrl) {
+            if (u->get_job() == JobType::Warrior) warriorCountPlay += stars;
+            else if (u->get_job() == JobType::Mage) mageCountPlay += stars;
+            else if (u->get_job() == JobType::Archer) archerCountPlay += stars;
+        } else {
+            if (u->get_job() == JobType::Warrior) warriorCountEnem += stars;
+            else if (u->get_job() == JobType::Mage) mageCountEnem += stars;
+            else if (u->get_job() == JobType::Archer) archerCountEnem += stars;
+        }
+    }
+
+    for (Unit* u : m_units) {
+        int count = 0;
+        if (u->get_owner() == Owner::PlayerCtrl) {
+            if (u->get_job() == JobType::Warrior) count = warriorCountPlay;
+            else if (u->get_job() == JobType::Mage) count = mageCountPlay;
+            else if (u->get_job() == JobType::Archer) count = archerCountPlay;
+        } else {
+            if (u->get_job() == JobType::Warrior) count = warriorCountEnem;
+            else if (u->get_job() == JobType::Mage) count = mageCountEnem;
+            else if (u->get_job() == JobType::Archer) count = archerCountEnem;
+        }
+
+        int level = 0;
+        if (u->get_job() == JobType::Warrior) {
+            if (count >= 4) level = 2;
+            else if (count >= 2) level = 1;
+        } else if (u->get_job() == JobType::Mage) {
+            if (count >= 3) level = 1;
+        } else if (u->get_job() == JobType::Archer) {
+            if (count >= 3) level = 1;
+        }
+        
+        u->set_traitLevel(level);
+        u->applyTraitEffects();
+    }
 }

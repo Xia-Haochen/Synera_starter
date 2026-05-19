@@ -33,6 +33,11 @@ Unit::Unit(const QString& name)
     , target(nullptr)
     , owner(Owner::PlayerCtrl)
     , Star_Level(1)
+    , Trait_Level(0)
+    , Base_Max_HP(100000)
+    , Base_ATK(100)
+    , Base_Range(1)
+    , Base_Max_Mana(100)
     // finish: TODO[T0-1/T1-4]: 在这里通过初始化列表或内部代码，给 HP/ATK/Max_Mana 等战斗属性赋初值
     // finish: TODO[T0-1]: 初始化 owner 阵营标识、是否存活 is_alive=true、法力值 Mana=0、以及默认星阶 1
     // TODO[T2-2]: 将当前动作状态设置为 Idle（空闲不找目标）
@@ -56,6 +61,11 @@ Unit::Unit(const QString& name, Role_Template t)
     , target(nullptr)
     , owner(Owner::PlayerCtrl)
     , Star_Level(1)
+    , Trait_Level(0)
+    , Base_Max_HP(t.HP)
+    , Base_ATK(t.ATK)
+    , Base_Range(t.Range)
+    , Base_Max_Mana(t.Max_Mana)
 {
 }
 
@@ -75,6 +85,11 @@ Unit::Unit(const Unit& other)
     , target(other.target) // Warning：浅复制指针，后续可能需要改
     , owner(other.owner)
     , Star_Level(other.Star_Level)
+    , Trait_Level(other.Trait_Level)
+    , Base_Max_HP(other.Base_Max_HP)
+    , Base_ATK(other.Base_ATK)
+    , Base_Range(other.Base_Range)
+    , Base_Max_Mana(other.Base_Max_Mana)
 {
     // TODO[T3-4]: 复制构造函数，确保在合成进阶（3合1）时正确复制单位属性和状态
 }
@@ -157,6 +172,46 @@ void Unit::takeDamage(int amount)
     }
 }
 
+void Unit::applyTraitEffects()
+{
+    // 如果没有羁绊，恢复基础属性
+    int oldMaxHp = Max_HP;
+    
+    if (m_job == JobType::Warrior) {
+        if (Trait_Level == 1) {
+            Max_HP = Base_Max_HP * 1.5;
+        } else if (Trait_Level >= 2) {
+            Max_HP = Base_Max_HP * 2.0;
+        } else {
+            Max_HP = Base_Max_HP;
+        }
+        ATK = Base_ATK; // 战士不加攻击
+        Range = Base_Range;
+        Max_Mana = Base_Max_Mana;
+    } else if (m_job == JobType::Archer) {
+        if (Trait_Level >= 1) {
+            ATK = Base_ATK * 1.5;
+        } else {
+            ATK = Base_ATK;
+        }
+        Max_HP = Base_Max_HP; // 弓手不加血量
+        Range = Base_Range;
+        Max_Mana = Base_Max_Mana;
+    } else if (m_job == JobType::Mage) {
+        Max_HP = Base_Max_HP;
+        ATK = Base_ATK;
+        Range = Base_Range;
+        Max_Mana = Base_Max_Mana;
+    }
+    
+    // 如果最大生命值发生变化，按比例调整当前血量
+    if (oldMaxHp > 0 && Max_HP != oldMaxHp) {
+        double ratio = static_cast<double>(HP) / oldMaxHp;
+        HP = Max_HP * ratio;
+        if (HP <= 0 && is_alive) HP = 1;
+    }
+}
+
 // finish: TODO[T2-5]: 实现 attack(Unit* target) 虚函数，加入攻速（每 x 帧一次）逻辑，每次普攻计算伤害并令自身每次普攻回复10点蓝
 
 // finish: TODO[T2-5]: 实现 takeDamage(int amount) 虚函数，收到伤害降低当前 HP，若 HP<=0 标为死亡，清空站位
@@ -215,6 +270,7 @@ void Mage::castSkill(Game& game)
     Unit* centerUnit = game.get_board().getUnitAt(centerPos);
     if (centerUnit && centerUnit->get_owner() != owner) {
         centerUnit->takeDamage(get_atk());
+        if (get_traitLevel() >= 1) centerUnit->set_isDizzy(true);
     }
 
     // 灼烧周围6个方向的敌人
@@ -223,6 +279,7 @@ void Mage::castSkill(Game& game)
         Unit* targetUnit = game.get_board().getUnitAt(targetPos);
         if (targetUnit && targetUnit->get_owner() != owner) {
             targetUnit->takeDamage(get_atk());
+            if (get_traitLevel() >= 1) targetUnit->set_isDizzy(true);
         }
     }
     return;

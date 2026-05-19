@@ -71,6 +71,7 @@ public:
     void rollShop();
 
     void checkAndMerge(Unit* newUnit);
+    void updateTraits();
 
 signals:
     void phaseChanged(Phase newPhase);

@@ -118,6 +118,15 @@ void UnitItem::paint(QPainter* painter, const QStyleOptionGraphicsItem*, QWidget
         QString atkStr = QString("A:%1").arg(m_unit->get_atk());
         painter->drawText(QRectF(-30, -36, 60, 15), Qt::AlignCenter, atkStr);
 
+        // 羁绊等级显示在星级上方
+        QFont traitFont = painter->font();
+        traitFont.setPointSize(7);
+        traitFont.setBold(true);
+        painter->setFont(traitFont);
+        painter->setPen(Qt::white);
+        QString traitStr = QString("羁绊:%1").arg(m_unit->get_traitLevel());
+        painter->drawText(QRectF(-30, 14, 60, 12), Qt::AlignCenter, traitStr);
+
         // 星级显示在单位底部
         QFont starFont = painter->font();
         starFont.setPointSize(9);

@@ -96,6 +96,19 @@ public:
     int get_m_id() const { return m_id; }
     JobType get_job() const { return m_job; }
 
+    int get_traitLevel() const { return Trait_Level; }
+    int get_baseMaxHp() const { return Base_Max_HP; }
+    int get_baseAtk() const { return Base_ATK; }
+    int get_baseRange() const { return Base_Range; }
+    int get_baseMaxMana() const { return Base_Max_Mana; }
+
+    void set_traitLevel(int level) { Trait_Level = level; }
+    void set_baseMaxHp(int hp) { Base_Max_HP = hp; }
+    void set_baseAtk(int atk) { Base_ATK = atk; }
+    void set_baseRange(int range) { Base_Range = range; }
+    void set_baseMaxMana(int mana) { Base_Max_Mana = mana; }
+    void applyTraitEffects();
+
     void set_hp(int hp) { HP = hp; }
     void set_maxHp(int maxHp) { Max_HP = maxHp; }
     void set_atk(int atk) { ATK = atk; }
@@ -149,6 +162,11 @@ private:
     // TODO[T3-3]: 增加羁绊属性标签 traits (例如使用 std::vector<QString> 或自定义 Enum)，同种羁绊达成触发Buff
     // TODO[T3-4]: 增加星级(Star_Level)属性支持3合1进阶机制（1星合成保留原位变2星），以及记录星阶属性翻倍数据
     int Star_Level; //单位星级，1-3星，3星后不再进阶
+    int Trait_Level; //羁绊等级
+    int Base_Max_HP; //无羁绊时的基础最大血量
+    int Base_ATK; //无羁绊时的基础攻击力
+    int Base_Range; //无羁绊时的基础攻击范围
+    int Base_Max_Mana; //无羁绊时的基础最大法力值
     // TODO[T2-2/T2-3]: 增加一个成员维护当前状态机的状态 state，以及寻找的目标敌方单位指针 Unit* current_target;
     // TODO[T3-5]: 增加装备槽数据结构(如 std::vector<Equipment*> eq)，PA要求1星最多1件，2星可选扩展2件
 };
