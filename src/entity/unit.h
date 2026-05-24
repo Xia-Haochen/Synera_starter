@@ -3,11 +3,8 @@
 
 #include <QPoint>
 #include <QString>
-// finish: TODO[T3-5]: 装备(Equipment)类已引入，支持玩家给单位穿戴装备
 
-// TODO[T2-2]: 定义战斗状态机枚举，例如 enum class State { Idle, Moving, Attacking, Casting, Dead };
-
-class Game; // 前置声明，避免循环依赖
+class Game;
 
 #include "core/equipment.h"
 #include <vector>
@@ -134,13 +131,13 @@ public:
     static void setNextId(int id) { s_nextId = id; }
 
     void find_target(Game& game);
-    // TODO[T2-2]: 实现每帧更新的虚拟函数，基于状态机的帧逻辑更新，如 virtual void action() = 0; 或提供默认实现
+    // 每帧更新的战斗逻辑：移动 / 攻击 / 施法
     virtual void action(Game& game);
-    // finish: TODO[T2-5]: 实现虚函数 virtual void attack(Unit* target); 计算普攻伤害、回蓝逻辑（如每次普攻回10点蓝）
+    // 普攻，附带 10 点回蓝
     virtual void attack(Unit* target);
-    // TODO[T0-2/T2-5]: 实现纯虚函数 virtual void castSkill(Game& game) = 0; 让3-5个派生的英雄类各自实现不同的技能逻辑(眩晕/AOE/回血等)
+    // 技能（纯虚函数，由派生类各自实现）
     virtual void castSkill(Game& game) = 0;
-    // finish: TODO[T2-5]: 实现虚拟函数 virtual void takeDamage(int amount); 计算受击扣血后判断是否进入Dead状态并触发死亡结算
+    // 受击扣血，HP ≤ 0 时标记死亡
     virtual void takeDamage(int amount);
 
 protected:
@@ -165,18 +162,17 @@ private:
     bool has_target; //是否有攻击目标
     Unit* target;
 
-    // TODO[T2-5]: 增加战斗属性扩展：Attack_Speed(攻击速度，以帧为单位计量)、Move_Speed(移动速度)
-    // TODO[T3-3]: 增加羁绊属性标签 traits (例如使用 std::vector<QString> 或自定义 Enum)，同种羁绊达成触发Buff
-    // TODO[T3-4]: 增加星级(Star_Level)属性支持3合1进阶机制（1星合成保留原位变2星），以及记录星阶属性翻倍数据
-    int Star_Level; //单位星级，1-3星，3星后不再进阶
-    int Trait_Level; //羁绊等级
-    int Base_Max_HP; //无羁绊时的基础最大血量
-    int Base_ATK; //无羁绊时的基础攻击力
-    int Base_Range; //无羁绊时的基础攻击范围
-    int Base_Max_Mana; //无羁绊时的基础最大法力值
+    // 星级属性（1-3星，3合1进阶）
+    int Star_Level;
+    int Trait_Level;
+    // 无羁绊加成时的基础属性
+    int Base_Max_HP;
+    int Base_ATK;
+    int Base_Range;
+    int Base_Max_Mana;
     std::vector<Equipment*> m_equipments;
-    // TODO[T2-2/T2-3]: 增加一个成员维护当前状态机的状态 state，以及寻找的目标敌方单位指针 Unit* current_target;
-    // TODO[T3-5]: 增加装备槽数据结构(如 std::vector<Equipment*> eq)，PA要求1星最多1件，2星可选扩展2件
+    // TODO[T2-5]: 增加战斗属性扩展：Attack_Speed、Move_Speed
+    // TODO[T3-3]: 增加羁绊属性标签 traits，同种羁绊触发 Buff
 };
 
 class Warrior : public Unit

@@ -38,11 +38,7 @@ Unit::Unit(const QString& name)
     , Base_ATK(100)
     , Base_Range(1)
     , Base_Max_Mana(100)
-    // finish: TODO[T0-1/T1-4]: 在这里通过初始化列表或内部代码，给 HP/ATK/Max_Mana 等战斗属性赋初值
-    // finish: TODO[T0-1]: 初始化 owner 阵营标识、是否存活 is_alive=true、法力值 Mana=0、以及默认星阶 1
-    // TODO[T2-2]: 将当前动作状态设置为 Idle（空闲不找目标）
 {
-    // finish: TODO[T0-2]: 各个派生继承类（如战士、法师等）将会调用带有不同基础面板的构造函数，可以考虑重新设计一个接受基础模板数据的构造或添加Init方法
 }
 
 Unit::Unit(const QString& name, Role_Template t)
@@ -155,7 +151,6 @@ void Unit::action(Game& game)
 
 void Unit::attack(Unit* targetUnit)
 {
-    // finish: TODO[T2-5]: 实现攻击逻辑，计算伤害并应用到目标单位
     targetUnit->takeDamage(ATK);
     if(!targetUnit->get_isAlive()) {
         has_target = false; // 目标死了，清除攻击目标
@@ -166,7 +161,6 @@ void Unit::attack(Unit* targetUnit)
 
 void Unit::takeDamage(int amount)
 {
-    // finish: TODO[T2-5]: 实现受击逻辑，降低当前 HP，若 HP<=0 标为死亡，清空站位
     if(!is_alive) {
         return;
     }
@@ -247,11 +241,6 @@ bool Unit::has_haste_gloves() const {
     return false;
 }
 
-// finish: TODO[T2-5]: 实现 attack(Unit* target) 虚函数，加入攻速（每 x 帧一次）逻辑，每次普攻计算伤害并令自身每次普攻回复10点蓝
-
-// finish: TODO[T2-5]: 实现 takeDamage(int amount) 虚函数，收到伤害降低当前 HP，若 HP<=0 标为死亡，清空站位
-
-// finish: TODO[T3-4/T3-5]: 析构时清理装备资源，合并/出售时退还装备到装备栏
 
 Warrior::Warrior(const QString& name, Owner Camp)
     : Unit(name, RoleTemplate<JobType::Warrior>().attr)
@@ -262,7 +251,7 @@ Warrior::Warrior(const QString& name, Owner Camp)
 
 void Warrior::castSkill(Game& game)
 {
-    // finish: TODO[T0-2/T2-5]: 实现战士技能逻辑（如眩晕敌人1秒）
+    Q_UNUSED(game);
     get_Target()->set_isDizzy(true);
     set_atk(get_atk() * 1.2); // 眩晕后攻击力提升20%（示例效果）
     attack(get_Target()); // 眩晕后执行一次攻击
@@ -278,8 +267,7 @@ Mage::Mage(const QString& name, Owner Camp)
 
 void Mage::castSkill(Game& game)
 {
-    // finish: TODO[T0-2/T2-5]: 实现法师技能逻辑（如释放火球术）
-    if (!get_Target()) return; // 防御性判断
+    if (!get_Target()) return;
 
     QPoint centerPos = get_Target()->position();
 
@@ -329,7 +317,7 @@ Archer::Archer(const QString& name, Owner Camp)
 
 void Archer::castSkill(Game& game)
 {
-    // finish: TODO[T0-2/T2-5]: 实现射手技能逻辑（如对目标进行斩杀）
+    Q_UNUSED(game);
     for(int i = 0; i < 2; i++) {
         if(get_Target()) { // 修复：必须确保目标还存活且非空才能继续攻击
             attack(get_Target()); // 先攻击目标2次

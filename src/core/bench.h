@@ -9,13 +9,11 @@ class Board;
 
 class Bench
 {
-    // finish: TODO[T1-1]: 实现备战区数据结构，支持单位上阵/下阵逻辑（建议使用 QVector<Unit*> 来存储备战区单位列表，并提供 addUnit/removeUnit/getUnits 等接口）
-    const int MAX_BENCH_SIZE = 8; // PA中备战区最大容纳单位数量
-    int Bench_unit_count; // 当前备战区单位数量
-    QVector<Unit*> m_units;
-
 public:
-    Bench() : Bench_unit_count(0), m_units(MAX_BENCH_SIZE, nullptr) {}
+    // 备战区最大容纳单位数量
+    static constexpr int MAX_BENCH_SIZE = 8;
+
+    Bench() : m_unitCount(0), m_units(MAX_BENCH_SIZE, nullptr) {}
     ~Bench() = default;
 
     int getUnitCount() const;
@@ -23,16 +21,21 @@ public:
 
     void clear();
 
+    // --- 单位管理 ---
     void addUnit(Unit* unit);
     void removeUnit(Unit* unit);
     QVector<Unit*> getUnits() const;
 
-    // finish: TODO[T1-1]: 实现备战区与棋盘之间的单位移动接口（如 moveToBoard(Board& board, int benchIndex, const QPoint& targetPos) 和 moveFromBoard(Board& board, const QPoint& sourcePos, int benchIndex)）
+    // --- 棋盘与备战区之间的移动 ---
     void moveToBoard(Board& board, int benchIndex, const QPoint& targetPos);
     void moveFromBoard(Board& board, const QPoint& sourcePos, int benchIndex);
-    
-    // 增加备战区内部的自由拖动（互换）
+
+    // --- 备战区内部换位 ---
     void moveBenchToBench(int fromIndex, int toIndex);
+
+private:
+    int m_unitCount = 0;
+    QVector<Unit*> m_units;
 };
 
 #endif // BENCH_H

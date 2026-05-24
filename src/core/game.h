@@ -77,17 +77,14 @@ public:
     void checkAndMerge(Unit* newUnit);
     void updateTraits();
 
+    // 存档 & 读档
+    bool saveToFile(const QString& path);
+    bool loadFromFile(const QString& path);
+
 signals:
     void phaseChanged(Phase newPhase);
     void stateUpdated();
     void gameEnded(bool isVictory);
-
-    // finish: TODO[T3-1/T3-2]: 商店与经济入口已完成（buyFromShopSlot/rollShop/sellUnit）。
-public:
-    bool saveToFile(const QString& path);
-    bool loadFromFile(const QString& path);
-signals:
-    // TODO[T3-7]: 增加阶段三整合UI同步接口（syncHud()/syncShop()/syncSynergyPanel()）。
 
 private:
     // 初始化与查询辅助。
@@ -100,16 +97,12 @@ private:
     // 落子合法性判断与执行。
     bool canApplyDrop(int unitId, const QPoint& source, const QPoint& target) const;
     void applyDrop(int unitId, const QPoint& target);
-    // 出售单位
     void sellUnit(int unitId, const QPoint& sourceGrid);
-    // finish: TODO[T1-2]: 非法拖拽处理策略（交换/回弹）统一收口函数，避免散落在UI事件中。
-    // finish: TODO[T1-1]: 棋盘与备战区双向上阵/下阵规则（建议拆分 canMoveBenchToBoard/canMoveBoardToBench）。
 
     // 场景构建与逻辑-渲染同步。
     void buildScene();
     void syncFromBoard();
-    // finish: TODO[T1-3]: 同步单位血条/蓝条/属性面板到图元。
-    
+
     // Equip GUI handling
     void handleEquipDragStarted(Equipment* eq, int sourceSlot, const QPointF& scenePos);
     void handleEquipDragMoved(Equipment* eq, int sourceSlot, const QPointF& scenePos);

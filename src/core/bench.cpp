@@ -3,7 +3,7 @@
 
 int Bench::getUnitCount() const
 {
-    return Bench_unit_count;
+    return m_unitCount;
 }
 
 int Bench::getMaxBenchSize() const
@@ -14,7 +14,7 @@ int Bench::getMaxBenchSize() const
 void Bench::clear()
 {
     m_units.fill(nullptr);
-    Bench_unit_count = 0;
+    m_unitCount = 0;
 }
 
 void Bench::addUnit(Unit* unit) 
@@ -22,7 +22,7 @@ void Bench::addUnit(Unit* unit)
     for(int i = 0; i < MAX_BENCH_SIZE; ++i) {
         if(!m_units[i]) {
             m_units[i] = unit;
-            Bench_unit_count++; // 更新当前备战区单位数量
+            m_unitCount++; // 更新当前备战区单位数量
             break;
         }
     }
@@ -33,7 +33,7 @@ void Bench::removeUnit(Unit* unit)
     for(int i = 0; i < MAX_BENCH_SIZE; ++i) {
         if(m_units[i] == unit) {
             m_units[i] = nullptr;
-            Bench_unit_count--; // 更新当前备战区单位数量
+            m_unitCount--; // 更新当前备战区单位数量
             break;
         }
     }
@@ -58,7 +58,7 @@ void Bench::moveToBoard(Board& board, int benchIndex, const QPoint& targetPos)
     // 先从各自的容器中移除
     if (benchUnit) {
         m_units[benchIndex] = nullptr;
-        Bench_unit_count--;
+        m_unitCount--;
     }
     if (boardUnit) {
         board.removeUnit(boardUnit);
@@ -70,7 +70,7 @@ void Bench::moveToBoard(Board& board, int benchIndex, const QPoint& targetPos)
     }
     if (boardUnit) {
         m_units[benchIndex] = boardUnit;
-        Bench_unit_count++;
+        m_unitCount++;
     }
 }
 
