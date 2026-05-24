@@ -43,8 +43,8 @@ void GameWindow::updateUIState()
     if (!m_game) return;
 
     auto state = m_game->getPlayerState();
-    m_statsLabel->setText(QString("HP: %1 | Gold: %2 | Round: %3")
-                          .arg(state.hp).arg(state.gold).arg(state.round));
+    m_statsLabel->setText(QString("HP: %1 | Gold: %2 | PopCap: %3 | Round: %4")
+                          .arg(state.hp).arg(state.gold).arg(state.boardCap).arg(state.round));
 
     QString phaseStr;
     if (m_game->getPhase() == Phase::Prep) {
@@ -66,8 +66,11 @@ void GameWindow::updateUIState()
     m_phaseLabel->setText(phaseStr);
 
     updateShopUI();
-    m_refreshButton->setEnabled(m_game->getPhase() == Phase::Prep
+    bool prepPhase = m_game->getPhase() == Phase::Prep;
+    m_refreshButton->setEnabled(prepPhase
         && m_game->getPlayerState().gold >= Shop::REFRESH_COST);
+    m_boardCapButton->setEnabled(prepPhase
+        && m_game->getPlayerState().gold >= 3);
 }
 
 void GameWindow::setupUI()
@@ -138,6 +141,10 @@ void GameWindow::setupUI()
     QHBoxLayout* shopLayout = new QHBoxLayout(m_shopPanel);
     shopLayout->setContentsMargins(8, 4, 8, 4);
 
+    m_boardCapButton = new QPushButton("人口上限+1(3g)", this);
+    m_boardCapButton->setFixedSize(130, 40);
+    shopLayout->addWidget(m_boardCapButton);
+
     QLabel* shopLabel = new QLabel("商店", this);
     QFont shopFont = shopLabel->font();
     shopFont.setPointSize(12);
@@ -169,6 +176,7 @@ void GameWindow::setupUI()
     connect(m_startBattleButton, &QPushButton::clicked, this, &GameWindow::onStartBattleClicked);
     connect(m_saveButton, &QPushButton::clicked, this, &GameWindow::onSaveGameClicked);
 
+    connect(m_boardCapButton, &QPushButton::clicked, this, &GameWindow::onBuyBoardCap);
     connect(m_shopSlots[0], &QPushButton::clicked, this, &GameWindow::onBuySlot0);
     connect(m_shopSlots[1], &QPushButton::clicked, this, &GameWindow::onBuySlot1);
     connect(m_shopSlots[2], &QPushButton::clicked, this, &GameWindow::onBuySlot2);
@@ -211,6 +219,7 @@ void GameWindow::onBuySlot1() { if (m_game) m_game->buyFromShopSlot(1); }
 void GameWindow::onBuySlot2() { if (m_game) m_game->buyFromShopSlot(2); }
 void GameWindow::onBuySlot3() { if (m_game) m_game->buyFromShopSlot(3); }
 void GameWindow::onBuySlot4() { if (m_game) m_game->buyFromShopSlot(4); }
+void GameWindow::onBuyBoardCap() { if (m_game) m_game->buyBoardCap(); }
 void GameWindow::onRefreshShop() { if (m_game) m_game->rollShop(); }
 
 void GameWindow::onNewGameClicked() {

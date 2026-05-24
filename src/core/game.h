@@ -25,7 +25,7 @@ struct PlayerState {
     int hp = 10;
     int gold = 100;
     int level = 1;
-    int boardCap = 7;   // 人口上限
+    int boardCap = 5;   // 人口上限
     int round = 1;
 };
 
@@ -71,6 +71,7 @@ public:
     // 商店与出售
     Shop& getShop() { return m_shop; }
     void buyFromShopSlot(int slotIndex);
+    void buyBoardCap(); // 购买人口上限
     void rollShop();
 
     void checkAndMerge(Unit* newUnit);

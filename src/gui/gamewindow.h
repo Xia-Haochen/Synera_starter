@@ -30,6 +30,7 @@ private slots:
     void onBuySlot2();
     void onBuySlot3();
     void onBuySlot4();
+    void onBuyBoardCap();
     void onRefreshShop();
     void onNewGameClicked();
     void onLoadGameClicked();
@@ -54,6 +55,7 @@ private:
 
     // 商店 UI
     QWidget* m_shopPanel;
+    QPushButton* m_boardCapButton; // 人口上限购买按钮
     QPushButton* m_shopSlots[5];
     QPushButton* m_refreshButton;
 };

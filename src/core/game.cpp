@@ -658,6 +658,17 @@ void Game::buyFromShopSlot(int slotIndex)
     emit stateUpdated();
 }
 
+void Game::buyBoardCap()
+{
+    if (m_phase != Phase::Prep) return;
+    static const int BOARD_CAP_COST = 3;
+    if (m_playerState.gold < BOARD_CAP_COST) return;
+
+    m_playerState.gold -= BOARD_CAP_COST;
+    m_playerState.boardCap++;
+    emit stateUpdated();
+}
+
 void Game::checkAndMerge(Unit* newUnit)
 {
     if (!newUnit) return;
@@ -1098,7 +1109,7 @@ bool Game::loadFromFile(const QString& path) {
     m_playerState.hp = pState.contains("hp") ? pState["hp"].toInt() : 10;
     m_playerState.gold = pState.contains("gold") ? pState["gold"].toInt() : 0;
     m_playerState.level = pState.contains("level") ? pState["level"].toInt() : 1;
-    m_playerState.boardCap = PlayerState().boardCap; // 强制设为boardCap，不再从存档读取
+    m_playerState.boardCap = pState.contains("boardCap") ? pState["boardCap"].toInt() : PlayerState().boardCap;
     m_playerState.round = pState.contains("round") ? pState["round"].toInt() : 1;
     m_phase = static_cast<Phase>(root["phase"].toInt());
 
