@@ -426,10 +426,10 @@ void Game::createStarterUnitsIfNeeded()
     m_units.append(new Mage("法师", Owner::PlayerCtrl));
 }
 
-// 生成敌方单位：第 1 轮 2 个，之后每轮 +2，最多 8 个
+// 生成敌方单位：第 1 轮 3 个，之后每轮 +2，最多 15 个
 void Game::spawnEnemyWave()
 {
-    int enemyCount = std::min(8, m_playerState.round * 2);
+    int enemyCount = std::min(15, m_playerState.round * 2 + 1);
 
     for (int i = 0; i < enemyCount; ++i) {
         Unit* enemy = nullptr;

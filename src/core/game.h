@@ -23,7 +23,7 @@ enum class Phase { Prep, Combat, Resolve };
 
 struct PlayerState {
     int hp = 10;
-    int gold = 100;
+    int gold = 10;
     int level = 1;
     int boardCap = 5;   // 人口上限
     int round = 1;
