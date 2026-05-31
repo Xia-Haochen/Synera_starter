@@ -43,8 +43,17 @@ void GameWindow::updateUIState()
     if (!m_game) return;
 
     auto state = m_game->getPlayerState();
-    m_statsLabel->setText(QString("HP: %1 | Gold: %2 | PopCap: %3 | Round: %4")
-                          .arg(state.hp).arg(state.gold).arg(state.boardCap).arg(state.round));
+
+    // 连胜/连败：同一时刻只会有一种非零，显示在 Round 右侧
+    QString streakStr;
+    if (state.winStreak > 0) {
+        streakStr = QString(" | Win Streak: %1").arg(state.winStreak);
+    } else if (state.loseStreak > 0) {
+        streakStr = QString(" | Lose Streak: %1").arg(state.loseStreak);
+    }
+
+    m_statsLabel->setText(QString("HP: %1 | Gold: %2 | PopCap: %3 | Round: %4%5")
+                          .arg(state.hp).arg(state.gold).arg(state.boardCap).arg(state.round).arg(streakStr));
 
     QString phaseStr;
     if (m_game->getPhase() == Phase::Prep) {

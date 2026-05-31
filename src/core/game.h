@@ -27,6 +27,8 @@ struct PlayerState {
     int level = 1;
     int boardCap = 5;   // 人口上限
     int round = 1;
+    int winStreak = 0;  // 当前连胜场数
+    int loseStreak = 0; // 当前连败场数
 };
 
 // Game 负责连接棋盘数据(Board)与图形场景(QGraphicsScene)：

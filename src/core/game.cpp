@@ -78,6 +78,8 @@ void Game::reset()
     m_playerState.gold = PlayerState().gold; // 重置金币为初始值
     m_playerState.level = PlayerState().level; // 重置等级为初始值
     m_playerState.boardCap = PlayerState().boardCap; // 重置人口上限为初始值
+    m_playerState.winStreak = PlayerState().winStreak; // 重置连胜场数
+    m_playerState.loseStreak = PlayerState().loseStreak; // 重置连败场数
 
     // 彻底销毁当前所有残留的单位对象内存（不论敌我）
     qDeleteAll(m_units);
@@ -257,16 +259,25 @@ void Game::resolveCombat()
         }
     }
 
+    // 利息：本轮发放奖励前，按现有金币数的 1/3（向下取整）额外发放
+    int interest = m_playerState.gold / 3;
+
     if (enemyAliveCount == 0) {
-        // 胜利：所有敌人被消灭，奖励 15 金币
-        m_playerState.gold += 15;
+        // 胜利：更新连胜（重置连败），基础金币为 15 + (连胜场数 - 1)
+        m_playerState.winStreak++;
+        m_playerState.loseStreak = 0;
+        int baseGold = 15 + (m_playerState.winStreak - 1);
+        m_playerState.gold += baseGold + interest;
         // 第 8 轮胜利时触发通关
         if (m_playerState.round >= 8) {
             emit gameEnded(true);
         }
     } else {
-        // 失败（或平局）：场上还有剩余敌人，每个存活敌人扣 1 滴血，奖励 10 金币
-        m_playerState.gold += 10;
+        // 失败（或平局）：更新连败（重置连胜），基础金币为 10 + 3*(连败场数 - 1)
+        m_playerState.loseStreak++;
+        m_playerState.winStreak = 0;
+        int baseGold = 10 + 3 * (m_playerState.loseStreak - 1);
+        m_playerState.gold += baseGold + interest;
         m_playerState.hp -= enemyAliveCount;
         if (m_playerState.hp <= 0) {
             m_playerState.hp = 0;
@@ -778,6 +789,8 @@ void Game::checkAndMerge(Unit* newUnit)
             keepUnit->applyTraitEffects();  // 重新计算羁绊加成和装备加成
             keepUnit->set_hp(keepUnit->get_maxHp()); // 升星后回满血
 
+            m_playerState.gold += 5; // 合成升星奖励 5 金币
+
             // 递归检查：如果现在是 2 星，看看能不能继续合成 3 星
             checkAndMerge(keepUnit);
         }
@@ -1086,6 +1099,8 @@ bool Game::saveToFile(const QString& path) {
     pState["level"] = m_playerState.level;
     pState["boardCap"] = m_playerState.boardCap;
     pState["round"] = m_playerState.round;
+    pState["winStreak"] = m_playerState.winStreak;
+    pState["loseStreak"] = m_playerState.loseStreak;
     root["playerState"] = pState;
     root["phase"] = static_cast<int>(m_phase);
 
@@ -1175,6 +1190,8 @@ bool Game::loadFromFile(const QString& path) {
     m_playerState.level = pState.contains("level") ? pState["level"].toInt() : 1;
     m_playerState.boardCap = pState.contains("boardCap") ? pState["boardCap"].toInt() : PlayerState().boardCap;
     m_playerState.round = pState.contains("round") ? pState["round"].toInt() : 1;
+    m_playerState.winStreak = pState.contains("winStreak") ? pState["winStreak"].toInt() : 0;
+    m_playerState.loseStreak = pState.contains("loseStreak") ? pState["loseStreak"].toInt() : 0;
     m_phase = static_cast<Phase>(root["phase"].toInt());
 
     // ===== 恢复商店 =====
